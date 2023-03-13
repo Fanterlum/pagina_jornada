@@ -1,0 +1,19 @@
+label {
+    margin-top: .5rem;
+}
+.label:hover {
+  border-radius: 9px;
+  background-color: rgba(200,200,200,.6);
+  cursor: pointer;
+}
+.label input[type=radio]:hover {
+  cursor: pointer;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.none {
+	display: none;
+}
