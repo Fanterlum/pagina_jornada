@@ -212,57 +212,93 @@ function cambiar_dia_detalles(){
     var Mes = organizer.calendar.date.getMonth();
 
     if (Mes == 3) { //Abril
-        if (Dia == 17){ //Semana 1 - Lunes
+        ////////////////////////////////////////SEMANA 1
+        if (Dia == 17){ //Semana 1 - Lunes  DIA 1
             var elemento = document.getElementById("Prueba_1")
-            elemento.click() ; //simula click
+            elemento.click() ; //simula click DIA 1
             elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
-        }else if (Dia == 18) {//Semana 1 - Martes /////////////////////SEMANA 1
+        }else if (Dia == 18) {//Semana 1 - Martes DIA 2
             var elemento = document.getElementById("Prueba_2")
-            elemento.click() ; //simula click
+            elemento.click() ; //simula click 
             elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
-        }else if (Dia == 19) {//Semana 1 - Miercoles
+        }else if (Dia == 19) {//Semana 1 - Miercoles DIA 3
             var elemento = document.getElementById("Prueba_3")
-            elemento.click() ; //simula click
+            elemento.click() ; //simula click 
             elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
-        }else if (Dia == 20) {//Semana 1 - Jueves
+        }else if (Dia == 20) {//Semana 1 - Jueves DIA 4
             var elemento = document.getElementById("Prueba_4")
+            elemento.click() ; //simula click 
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 21) {//Semana 1 - Viernes DIA 5
+            var elemento = document.getElementById("Prueba_5")
+            elemento.click() ; //simula click 
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+            ////////////////////////////////////////SEMANA 2
+        }else if (Dia == 24) {//Semana 2 - Lunes DIA 6
+            var elemento = document.getElementById("Prueba_6")
+            elemento.click() ; //simula click 
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 25) {//Semana 2 - Martes DIA 7
+            var elemento = document.getElementById("Prueba_7")
+            elemento.click() ; //simula click 
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 26) {//Semana 2 - Miercoles DIA 8
+            var elemento = document.getElementById("Prueba_8")
             elemento.click() ; //simula click
             elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
-        }else if (Dia == 21) {//Semana 1 - Viernes
-
-        }else if (Dia == 24) {//Semana 2 - Lunes /////////////////////SEMANA 2
-
-        }else if (Dia == 25) {//Semana 2 - Martes
-
-        }else if (Dia == 26) {//Semana 2 - Miercoles
-
-        }else if (Dia == 27) {//Semana 2 - Jueves
-
-        }else if (Dia == 28) {//Semana 2 - Viernes
-
+        }else if (Dia == 27) {//Semana 2 - Jueves DIA 9
+            var elemento = document.getElementById("Prueba_9")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 28) {//Semana 2 - Viernes DIA 10
+            var elemento = document.getElementById("Prueba_10")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
         }
 
     }else if (Mes==4) { //Mayo
-        if (Dia == 1) {//Semana 3 - Lunes /////////////////////SEMANA 3
-
-        }else if (Dia == 2) {//Semana 3 - Martes
-
-        }else if (Dia == 3) {//Semana 3 - Miercoles
-
-        }else if (Dia == 4) {//Semana 3 - Jueves
-
-        }else if (Dia == 5) {//Semana 3 - Viernes
-
-        }else if (Dia == 8) {//Semana 4 - Lunes /////////////////////SEMANA 4
-
-        }else if (Dia == 9) {//Semana 4 - Martes
-
-        }else if (Dia == 10) {//Semana 4 - Miercoles
-
-        }else if (Dia == 11) {//Semana 4 - Jueves
-
-        }else if (Dia == 12) {//Semana 4 - Viernes
-
+        ////////////////////////////////////////SEMANA 3
+        if (Dia == 1) {//Semana 3 - Lunes DIA 11
+            var elemento = document.getElementById("Prueba_11")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 2) {//Semana 3 - Martes DIA 12
+            var elemento = document.getElementById("Prueba_12")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 3) {//Semana 3 - Miercoles DIA 13
+            var elemento = document.getElementById("Prueba_13")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 4) {//Semana 3 - Jueves DIA 14
+            var elemento = document.getElementById("Prueba_14")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 5) {//Semana 3 - Viernes DIA 15
+            var elemento = document.getElementById("Prueba_15")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+            /////////////////////SEMANA 4
+        }else if (Dia == 8) {//Semana 4 - Lunes DIA 16
+            var elemento = document.getElementById("Prueba_16")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 9) {//Semana 4 - Martes DIA 17
+            var elemento = document.getElementById("Prueba_17")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 10) {//Semana 4 - Miercoles DIA 18
+            var elemento = document.getElementById("Prueba_18")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 11) {//Semana 4 - Jueves DIA 19
+            var elemento = document.getElementById("Prueba_19")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
+        }else if (Dia == 12) {//Semana 4 - Viernes 20
+            var elemento = document.getElementById("Prueba_20")
+            elemento.click() ; //simula click
+            elemento.className = "nav-link text-uppercase"; //regresa al estado anterior
         }
     }
 }
