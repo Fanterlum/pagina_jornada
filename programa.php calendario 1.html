@@ -20,6 +20,10 @@
         
         <link rel="stylesheet" type="text/css" href="css/calendarorganizer.min.css"/> <!--MMTZ añadido-->
 
+        <!--FIN MMTZ añadido-->
+        
+        <script src="js/DiasDatos.js"></script> <!--Script importante que contiene los datos del calendario-->
+
         <!--MMTZ añadido-->
         <style type="text/css">
             #calendarContainer,
@@ -402,499 +406,97 @@
 
 
         <script>
+            function crear_dia_HTML(dia_num){
+                Array_Dia = DiasDatos[dia_num] ;
+                
+                //Carga Datos del Array
+                var id_actual = Array_Dia.IDTAg ;
 
+                //genera todo el HTML
 
-        const DiasDatos = {
-            1: { // DIA 1
-                IDTAg: "Abril17",
-                Fecha: "ABRIL 17",
-                Dia: "LUNES",
-                Eventos: {
-                    1: {
-                        Desde: "14:00",
-                        Hasta: "16:00",
-                        Tema: "Conectate con el ecosistema emprendedor",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Carlos Adrian Garcia Zambrano" ,
-                        
-                    },
-                    2: {
-                        Desde: "15:00",
-                        Hasta: "17:00",
-                        Tema: "Inaguración",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: null ,
-                        
-                    },
-                    
-                    
-                }//Eventos
-            }, //DEL DIA 1
+                var CREACIONHTML = ""
 
-            2: { // DIA 2
-                IDTAg: "Abril18",
-                Fecha: "ABRIL 18",
-                Dia: "MARTES",
-                Eventos: {
-                    1: {
-                        Desde: "11:00",
-                        Hasta: "13:00",
-                        Tema: "Propiedad intelectual y Emprendimiento digital",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Rodolfo Guerrero" ,
-                        
-                    },
-                    2: {
-                        Desde: "17:00",
-                        Hasta: "19:00",
-                        Tema: "[Tema Pendiente]",
-                        Subtema: null,
-                        Lugar: "Auditorio Y",
-                        Ponente: "Manuel Huescas" ,
-                    },
-                    
-                    
-                }//Eventos
-            },//DEL DIA 2
+                /*
+                CREACIONHTML += `<div class="col-12 flex-column d-flex justify-content-center text-center md-landscape-h-600px z-index-0 margin-1-half-rem-bottom">
+                            <div class="bg-black border-radius-6px padding-2-half-rem-all lg-padding-1-half-rem-all xs-padding-1-rem-all tilt-box" data-tilt-options='{ "maxTilt": 20, "perspective": 1000, "easing": "cubic-bezier(.03,.98,.52,.99)", "scale": 1, "speed": 500, "transition": true, "reset": true, "glare": false, "maxGlare": 1 }'>
+                                <h2 class="title-large-3 alt-font font-weight-600 text-neon-orange text-uppercase letter-spacing-minus-4px margin-1-half-rem-bottom mx-auto sm-letter-spacing-minus-1px image-mask background-position-center" style="background-image: url('images/cgai/dia_17_abril.jpg')">` + Array_Dia.Fecha + `</h2>
+                                <span class="alt-font extra-large text-uppercase letter-spacing-3px font-weight-500 d-block margin-10-top">` + Array_Dia.Dia +  `</span>
+                            </div>
+                        </div>`
+                */
+                CREACIONHTML += `<div class="panel-group time-table">` //crea tabla para programa
 
-            3: { // DIA 3
-                IDTAg: "Abril19",
-                Fecha: "ABRIL 19",
-                Dia: "MIERCOLES",
-                Eventos: {
-                    1: {
-                        Desde: "15:00",
-                        Hasta: "16:00",
-                        Tema: "Machine Learning aplicado a los negocios e innovación",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Kevin Torres" ,
+                //hace for de todos los programas
+                var programas_num = Object.keys(Array_Dia.Eventos).length; 
+                for (var i = 1; i < programas_num+1; i = i + 1) {       
+                    programa_i = Array_Dia.Eventos[i];
+                    // console.log(programa_i)
+
+                    //añade la hora
+                    var txt_hora =  programa_i.Desde + " "
+                    if (programa_i.Hasta !== "undefined"){
+                        txt_hora += "- " + programa_i.Hasta +" h" ;
+                    }else{
+                        txt_hora += "h" ; 
                     }
-                    
-                }//Eventos
-            },//DEL DIA 3
 
-            4: { // DIA 4
-                IDTAg: "Abril20",
-                Fecha: "ABRIL 20",
-                Dia: "JUEVES",
-                Eventos: {
-                    1: {
-                        Desde: "11:00",
-                        Hasta: "13:00",
-                        Tema: "Gamificar para impulsar tu emprendimiento",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Fernando Ramirez" ,
-                    },
-                    2: {
-                        Desde: "17:00",
-                        Hasta: "19:00",
-                        Tema: "Curso Impresión 3D",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Jesús Bonilla" ,
-                    },
-                    3: {
-                        Desde: "17:00",
-                        Hasta: "19:00",
-                        Tema: "Validación 101",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Angel Gonzalez Román" ,
+                    // añade tema
+                    var txt_Tema = programa_i.Tema ; 
+
+                    //para subtema
+                    var txt_subtema_puntos = "";
+                    var txt_SubTema = programa_i.Subtema
+
+                    if (txt_SubTema !== null){
+                        txt_subtema_puntos = ": ";
+                    } else {
+                        txt_SubTema = "" ;
                     }
-                    
-                }//Eventos
-            },//DEL DIA 4
 
-            5: { // DIA 5
-                IDTAg: "Abril21",
-                Fecha: "ABRIL 21",
-                Dia: "VIERNES",
-                Eventos: {
-                    1: {
-                        Desde: "11:00",
-                        Hasta: "15:00",
-                        Tema: "Video Juegos",
-                        Subtema: "Concurso de videojuegos",
-                        Lugar: "Auditorio",
-                        Ponente: "" ,
+                    // añade ponente
+                    var txt_ponente = programa_i.Ponente || ""
+
+                    //esto por si acaso:
+                    var txt_moderador_Tag = ""; // "Moderador:";
+                    var txt_moderador_nombre = ""; // "Nombre"
+
+                    // añade lugar
+                    var txt_Lugar = "" ; 
+                    if (typeof programa_i.Lugar == "string"){
+                        txt_Lugar = programa_i.Lugar ;
+                    } else if (typeof programa_i.Lugar == "object"){ //si hay varias
+
+                        for (var i2 = 0; i2 < programa_i.Lugar.length ; i2 = i2+1 ) {
+                            // console.log(programa_i.Lugar[i2] )
+                            txt_Lugar += programa_i.Lugar[i2] + "</br>"
+                        } 
                     }
-                    
-                }//Eventos
-            },//DEL DIA 5
 
-            ////////////////////////SEMANA 2
-            6: { // DIA 6
-                IDTAg: "Abril24",
-                Fecha: "ABRIL 24",
-                Dia: "LUNES",
-                Eventos: {
-                    1: {
-                        Desde: "15:00",
-                        Hasta: "16:00",
-                        Tema: "Machine Learning aplicado a los negocios e innovación",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Adriana zambrazo" ,
-                    },
-                    2: {
-                        Desde: "14:00",
-                        Hasta: "15:00",
-                        Tema: "[Pendiente]",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "DR LUQUE VEGA" ,
-                    },
-                    3: {
-                        Desde: "14:00",
-                        Hasta: "15:00",
-                        Tema: "[Pendiente]",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "DR LUQUE VEGA" ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 6
+                                        CREACIONHTML += `<div class="panel border-color-black-transparent">
+                                            <div class="panel-heading">
+                                                <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right text-iris-blue"></i>` + txt_hora + `</span>
+                                                <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                    <div class="feature-box-content last-paragraph-no-margin">
+                                                        <div class="panel-title">
+                                                            <span class="text-extra-dark-gray d-inline-block font-weight-300 margin-5px-bottom text-uppercase text-purple letter-spacing-3px "><span class="font-weight-600">` + txt_Tema + txt_subtema_puntos + `</span>` +txt_SubTema + `</span>
+                                                        </div>
 
-            7: { // DIA 7
-                IDTAg: "Abril25",
-                Fecha: "ABRIL 25",
-                Dia: "MARTES",
-                Eventos: {
-                    
-                    
-                }//Eventos
-            },//DEL DIA 7
+                                                        <p class="w-65 lg-w-85 md-w-90 xs-w-100"><a class="popup-with-move-anim text-iris-blue-hover font-weight-600" href="#modal-popup3-7">` +txt_ponente + `</a><br>` + txt_moderador_Tag +
+                                                        `<a class="popup-with-move-anim text-iris-blue-hover font-weight-600" href="#modal-popup3-8">` + txt_moderador_nombre +`</a>
+                                                        </p>
 
-            8: { // DIA 8
-                IDTAg: "Abril26",
-                Fecha: "ABRIL 26",
-                Dia: "MIERCOLES",
-                Eventos: {
-                   
-                    
-                }//Eventos
-            },//DEL DIA 8
-
-            9: { // DIA 9
-                IDTAg: "Abril27",
-                Fecha: "ABRIL 27",
-                Dia: "JUEVES",
-                Eventos: {
-                    1: {
-                        Desde: "11:00",
-                        Hasta: "12:00",
-                        Tema: "[Pendiente]",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Dra. Rocio" ,
-                    },
-                    2: {
-                        Desde: "12:00",
-                        Hasta: "13:00",
-                        Tema: "[Pendiente]",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Dra. Rocio" ,
-                    },
-                    3: {
-                        Desde: "17:00",
-                        Hasta: "19:00",
-                        Tema: "[Pendiente]",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Tlaloc" ,
-                    },
-                    
-                }//Eventos
-            },//DEL DIA 9
-
-            10: { // DIA 10
-                IDTAg: "Abril28",
-                Fecha: "ABRIL 28",
-                Dia: "VIERNES",
-                Eventos: {
-                    1: {
-                        Desde: "11:00",
-                        Hasta: "15:00",
-                        Tema: "Video Juegos",
-                        Subtema: "Concurso de videojuegos",
-                        Lugar: "Auditorio",
-                        Ponente: "" ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 10
-
-            11: { // DIA 11
-                IDTAg: "Mayo1",
-                Fecha: "MAYO 1",
-                Dia: "LUNES",
-                Eventos: {
-                    
-                    /*
-                    NO HAY NADA ESTE DÍA
-                    */
-                    
-                }//Eventos
-            },//DEL DIA 11
-
-            12: { // DIA 12
-                IDTAg: "Mayo2",
-                Fecha: "MAYO 2",
-                Dia: "MARTES",
-                Eventos: {
-                    1: {
-                        Desde: "15:00",
-                        Hasta: "16:00",
-                        Tema: "Primer aproach. Desarrollo de habilidades blandas para el emprendimiento",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Itzgal Tenorio" ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 12
-
-            13: { // DIA 13
-                IDTAg: "Mayo3",
-                Fecha: "MAYO 3",
-                Dia: "MIERCOLES",
-                Eventos: {
-                    1: {
-                        Desde: "11:00",
-                        Hasta: "13:00",
-                        Tema: "[Pendiente]",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Dra. Aimee Esparza " ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 13
-
-            14: { // DIA 14
-                IDTAg: "Mayo4",
-                Fecha: "MAYO 4",
-                Dia: "JUEVES",
-                Eventos: {
-                    1: {
-                        Desde: "11:00",
-                        Hasta: "13:00",
-                        Tema: "[Pendiente]",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Abraham Arce" ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 14
-
-            15: { // DIA 15
-                IDTAg: "Mayo5",
-                Fecha: "MAYO 5",
-                Dia: "VIERNES",
-                Eventos: {
-                    1: {
-                        Desde: "10:00",
-                        Hasta: "11:00",
-                        Tema: "Marinela",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "" ,
-                    },
-                    2: {
-                        Desde: "11:00",
-                        Hasta: "17:00",
-                        Tema: "Talent",
-                        Subtema: "Concurso de talentos",
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: null ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 15
-
-            16: { // DIA 16
-                IDTAg: "Mayo8",
-                Fecha: "MAYO 8",
-                Dia: "LUNES",
-                Eventos: {
-                    1: {
-                        Desde: "09:00",
-                        Hasta: "12:00",
-                        Tema: "[Pendiente]",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "Dr. Mario" ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 16
-
-            17: { // DIA 17
-                IDTAg: "Mayo9",
-                Fecha: "MAYO 9",
-                Dia: "MARTES",
-                Eventos: {
-                    1: {
-                        Desde: "17:00",
-                        Hasta: "19:00",
-                        Tema: "[Pendiente]",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: "MarUsia oL virtud" ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 17
-
-            18: { // DIA 18
-                IDTAg: "Mayo10",
-                Fecha: "MAYO 10",
-                Dia: "MIERCOLES",
-                Eventos: {
-                    
-                    
-                }//Eventos
-            },//DEL DIA 18
-
-            19: { // DIA 19
-                IDTAg: "Mayo11",
-                Fecha: "MAYO 11",
-                Dia: "JUEVES",
-                Eventos: {
-                    1: {
-                        Desde: "17:00",
-                        Hasta: "18:00",
-                        Tema: "Jmd",
-                        Subtema: null,
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: null ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 19
-
-            20: { // DIA 20
-                IDTAg: "Mayo12",
-                Fecha: "MAYO 12",
-                Dia: "VIERNES",
-                Eventos: {
-                    1: {
-                        Desde: "11:00",
-                        Hasta: "15:00",
-                        Tema: "Final de Videojuegos",
-                        Subtema: "Concurso de videojuegos",
-                        Lugar: ["Auditorio", "🖥️ Online"],
-                        Ponente: null ,
-                    }
-                    
-                }//Eventos
-            },//DEL DIA 20
-            
-
-            
-        };//cosas
-
-
-        function crear_dia_HTML(dia_num){
-            Array_Dia = DiasDatos[dia_num] ;
-            
-            //Carga Datos del Array
-            var id_actual = Array_Dia.IDTAg ;
-
-
-            //genera todo el HTML
-
-            var CREACIONHTML = ""
-
-            /*
-            CREACIONHTML += `<div class="col-12 flex-column d-flex justify-content-center text-center md-landscape-h-600px z-index-0 margin-1-half-rem-bottom">
-                        <div class="bg-black border-radius-6px padding-2-half-rem-all lg-padding-1-half-rem-all xs-padding-1-rem-all tilt-box" data-tilt-options='{ "maxTilt": 20, "perspective": 1000, "easing": "cubic-bezier(.03,.98,.52,.99)", "scale": 1, "speed": 500, "transition": true, "reset": true, "glare": false, "maxGlare": 1 }'>
-                            <h2 class="title-large-3 alt-font font-weight-600 text-neon-orange text-uppercase letter-spacing-minus-4px margin-1-half-rem-bottom mx-auto sm-letter-spacing-minus-1px image-mask background-position-center" style="background-image: url('images/cgai/dia_17_abril.jpg')">` + Array_Dia.Fecha + `</h2>
-                            <span class="alt-font extra-large text-uppercase letter-spacing-3px font-weight-500 d-block margin-10-top">` + Array_Dia.Dia +  `</span>
-                        </div>
-                    </div>`
-            */
-            CREACIONHTML += `<div class="panel-group time-table">` //crea tabla para programa
-
-            //hace for de todos los programas
-            var programas_num = Object.keys(Array_Dia.Eventos).length; 
-            for (var i = 1; i < programas_num+1; i = i + 1) {       
-                programa_i = Array_Dia.Eventos[i];
-                // console.log(programa_i)
-
-                //añade la hora
-                var txt_hora =  programa_i.Desde + " "
-                if (programa_i.Hasta !== "undefined"){
-                    txt_hora += "- " + programa_i.Hasta +" h" ;
-                }else{
-                    txt_hora += "h" ; 
-                }
-
-                // añade tema
-                var txt_Tema = programa_i.Tema ; 
-
-                //para subtema
-                var txt_subtema_puntos = "";
-                var txt_SubTema = programa_i.Subtema
-
-                if (txt_SubTema !== null){
-                    txt_subtema_puntos = ": ";
-                } else {
-                    txt_SubTema = "" ;
-                }
-
-                // añade ponente
-                var txt_ponente = programa_i.Ponente || ""
-
-                //esto por si acaso:
-                var txt_moderador_Tag = ""; // "Moderador:";
-                var txt_moderador_nombre = ""; // "Nombre"
-
-                // añade lugar
-                var txt_Lugar = "" ; 
-                if (typeof programa_i.Lugar == "string"){
-                    txt_Lugar = programa_i.Lugar ;
-                } else if (typeof programa_i.Lugar == "object"){ //si hay varias
-
-                    for (var i2 = 0; i2 < programa_i.Lugar.length ; i2 = i2+1 ) {
-                        // console.log(programa_i.Lugar[i2] )
-                        txt_Lugar += programa_i.Lugar[i2] + "</br>"
-                    } 
-                }
-
-                                    CREACIONHTML += `<div class="panel border-color-black-transparent">
-                                        <div class="panel-heading">
-                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right text-iris-blue"></i>` + txt_hora + `</span>
-                                            <div class="panel-body feature-box feature-box-left-icon-middle">
-                                                <div class="feature-box-content last-paragraph-no-margin">
-                                                    <div class="panel-title">
-                                                        <span class="text-extra-dark-gray d-inline-block font-weight-300 margin-5px-bottom text-uppercase text-purple letter-spacing-3px "><span class="font-weight-600">` + txt_Tema + txt_subtema_puntos + `</span>` +txt_SubTema + `</span>
                                                     </div>
-
-                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100"><a class="popup-with-move-anim text-iris-blue-hover font-weight-600" href="#modal-popup3-7">` +txt_ponente + `</a><br>` + txt_moderador_Tag +
-                                                    `<a class="popup-with-move-anim text-iris-blue-hover font-weight-600" href="#modal-popup3-8">` + txt_moderador_nombre +`</a>
-                                                    </p>
-
                                                 </div>
+                                                <span class="panel-speaker"><i class="feather icon-feather-map-pin margin-10px-right text-iris-blue"></i>` + txt_Lugar + `</span>
+                                            
                                             </div>
-                                            <span class="panel-speaker"><i class="feather icon-feather-map-pin margin-10px-right text-iris-blue"></i>` + txt_Lugar + `</span>
-                                        
-                                        </div>
-                                    </div>`
+                                        </div>`
 
-            }//for que recorre los programas 
-            CREACIONHTML += `</div>`//cierra tabla para programa
+                }//for que recorre los programas 
+                CREACIONHTML += `</div>`//cierra tabla para programa
 
-            document.getElementById(id_actual).innerHTML = CREACIONHTML ;
-        }//función dia HTML
+                document.getElementById(id_actual).innerHTML = CREACIONHTML ;
+            }//función dia HTML
 
 
             //carga la información de cada día
