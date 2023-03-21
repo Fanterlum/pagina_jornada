@@ -60,16 +60,35 @@
             }
             #calendario_ul_lista_hora {
                 font-size: 12px;
+                text-align: left;
                 line-height: 14px;
                 color: #921843;
             }
             #calendario_ul_lista_fecha {
                 font-size: 12px;
                 line-height: 14px;
+                text-align: justify;
                 padding-left: inherit;
             }
 
+            .astext {
+                background:none;
+                border:none;
+                margin:0;
+                padding:0;
+                cursor: pointer;
+                
+            }
+            .astext:hover {
+                background: rgb(232, 190, 206);;
+            }
+
         </style>
+
+    <style>
+
+    </style>
+
         <!--MMTZ añadido-->
 
     </head>
@@ -178,7 +197,7 @@
         <!-- end section -->
 
         
-
+       
 
         <!-- start section -->
         <section class="big-section bg-extra-dark-gray">
@@ -528,13 +547,16 @@
                                     programa_i = Array_Dia.Eventos[i];
                                     //console.log(programa_i)
 
+                                    Creacion_HTML += `<button class="astext" onclick = "fun()">`
                                     Creacion_HTML += `<li id="calendario_ul_lista_hora">` + programa_i.Desde + `</li>` ;
+                                    //Creacion_HTML += `<button class="astext" onclick = "fun()">` + programa_i.Tema + `</button> `
                                     Creacion_HTML += `<li id="calendario_ul_lista_fecha">` + programa_i.Tema + `</li>` ;
+                                    Creacion_HTML += `</button>`
                                 }
                             } else {
                                 a.style.cssText +='background-color: #eceaea';
                             }
-                            
+
                             Creacion_HTML += "</ul>" //cierra
                             a.innerHTML = Creacion_HTML;
 
@@ -559,6 +581,13 @@
                     document.head.appendChild(style);
                 </script>
 
+                <script>  
+                    function fun() {  
+                    alert("Welcome to the javaTpoint.com");  
+                    }  
+                </script>  
+     
+
 
                 <!-- COMENTARIO <div id="organizerContainer"></div> --> 
                 <div class="row justify-content-center">
@@ -567,6 +596,9 @@
 						<p>La 1ª Edición de INNOVA FORUM (antes Conectáctica) tuvo las siguientes participaciones</p>
                     </div>
                 </div>
+
+                
+
                 <div class="row">
                     <!-- start counter item -->
                     <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s">
@@ -792,6 +824,8 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/theme-vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+
     </body>
 </html>
 
