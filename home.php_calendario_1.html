@@ -547,7 +547,7 @@
                                     programa_i = Array_Dia.Eventos[i];
                                     //console.log(programa_i)
 
-                                    Creacion_HTML += `<button class="astext" onclick = "fun()">`
+                                    Creacion_HTML += `<button class="astext" onclick = "fun('`+ programa_i.Tema +`', '`+ programa_i.Desde +`', '`+ programa_i.Hasta +`', '`+ programa_i.Ponente +`', '`+ programa_i.Lugar +`', '`+ Array_Dia.Fecha  +`')">`
                                     Creacion_HTML += `<li id="calendario_ul_lista_hora">` + programa_i.Desde + `</li>` ;
                                     //Creacion_HTML += `<button class="astext" onclick = "fun()">` + programa_i.Tema + `</button> `
                                     Creacion_HTML += `<li id="calendario_ul_lista_fecha">` + programa_i.Tema + `</li>` ;
@@ -568,6 +568,15 @@
                             }
                         </script>
 
+                    <script>  
+                        function fun(Tema, Desde, Hasta, Ponente, Lugar, Fecha) {  
+                        alert("Evento: "+ Tema + "\n" + 
+                        "FECHA: "+ Fecha + " - "+ "De " + Desde + " a " + Hasta + "h"+ "\n"+
+                        "Ponente: "+ Ponente + "\n"+
+                        "Lugar: "+ Lugar  );  
+                        }  
+                    </script>  
+
                 <!-- CONFIGURA EL TAMAÑO DEL CALENDARIO --> 
                 <script>
                     const style = document.createElement('style');
@@ -581,11 +590,7 @@
                     document.head.appendChild(style);
                 </script>
 
-                <script>  
-                    function fun() {  
-                    alert("Welcome to the javaTpoint.com");  
-                    }  
-                </script>  
+                
      
 
 
