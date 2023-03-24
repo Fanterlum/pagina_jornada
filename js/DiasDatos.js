@@ -111,7 +111,7 @@ const DiasDatos = {
             1: {
                 Desde: "11:00",
                 Hasta: "15:00",
-                Tema: "Video Juegos",
+                Tema: "🎮 Video Juegos",
                 Subtema: "Concurso de videojuegos",
                 Lugar: "Auditorio",
                 Ponente: "" ,
@@ -220,7 +220,7 @@ const DiasDatos = {
             1: {
                 Desde: "11:00",
                 Hasta: "15:00",
-                Tema: "Video Juegos",
+                Tema: "🎮 Video Juegos",
                 Subtema: "Concurso de videojuegos",
                 Lugar: "Auditorio",
                 Ponente: "" ,
@@ -314,7 +314,7 @@ const DiasDatos = {
             2: {
                 Desde: "11:00",
                 Hasta: "17:00",
-                Tema: "Talent",
+                Tema: "🎵 Talent",
                 Subtema: "Concurso de talentos",
                 Lugar: ["Auditorio", "🖥️ Online"],
                 Ponente: null ,
@@ -397,7 +397,7 @@ const DiasDatos = {
             1: {
                 Desde: "11:00",
                 Hasta: "15:00",
-                Tema: "Final de Videojuegos",
+                Tema: "🏆 Final de Videojuegos",
                 Subtema: "Concurso de videojuegos",
                 Lugar: ["Auditorio", "🖥️ Online"],
                 Ponente: null ,

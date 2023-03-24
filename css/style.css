@@ -510,7 +510,7 @@ h6 { font-size:1.80rem; line-height:2.5rem; }
 .bg-gradient-magenta-orange { background-image: linear-gradient(to right top, #e42464, #ed3c5f, #f44f5c, #fa6259, #ff7357); }
 .bg-gradient-magenta-orange-2 { background-image: linear-gradient(to right top, #ec606c, #ee6362, #ee6757, #ed6c4d, #eb7242); }
 .bg-gradient-purple-magenta { background-image: linear-gradient(to right top, #502970, #7f2977, #ac2775, #d42d6b, #f34259); }
-.bg-gradient-innova { background-image: linear-gradient(to right, #502970, #4c46cc, #c62c8c, #e59d4a); }
+.bg-gradient-innova { background-image: linear-gradient(to right, #271f9b, #cc4846); } 
 .bg-gradient-light-purple-light-orange { background-image: linear-gradient(to right top, #b783ff, #e37be0, #fa7cc1, #ff85a6, #ff9393); }
 .bg-gradient-sky-blue-pink { background-image: linear-gradient(to right top, #556fff, #b263e4, #e05fc4, #f767a6, #ff798e); }
 .bg-gradient-peacock-blue-crome-yellow { background-image: linear-gradient(to right top, #36c1e1, #28ccc0, #74cf8e, #bac962, #feb95b); }
@@ -804,7 +804,7 @@ input.btn:focus { border-width: 2px; }
 .btn.btn-expand-ltr { position: relative; z-index: 1; }
 .btn.btn-expand-ltr.btn-rounded span { border-radius: 50px; }
 .btn.btn-expand-ltr:hover span { width: 100% !important; }
-.btn.btn-expand-ltr span { position: absolute; top: 0; left: 0; width: 50%; height: 100%; z-index: -1; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; }
+.btn.btn-expand-ltr span { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; }
 .btn.btn-expand-ltr i { display: inline-block; margin-left: 3px; opacity: 0; transform: translateX(-10px); -webkit-transform: translateX(-10px); -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.4s; -ms-transition-duration: 0.4s; -o-transition-duration: 0.4s; transition-duration: 0.4s; }
 .btn.btn-expand-ltr:hover i { opacity: 1; transform: translateX(0); -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
 
