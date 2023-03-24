@@ -1,10 +1,10 @@
 ﻿<!doctype html>
 <html class="no-js" lang="en">
     <head>
-        <title>INNOVA FORUM – Encuentro de Innovación Educativa</title>
+        <title>iLabTDI – Jornada del Innovador</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="author" content="UNIDIS by PROULEX">
+        <meta name="author" content="iLabTDI">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
         <meta name="description" content="Litho is a clean and modern design, BootStrap 5 responsive, business and portfolio multipurpose HTML5 template with 37+ ready homepage demos.">
         <!-- favicon icon -->
@@ -17,80 +17,148 @@
         <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+
+        <link rel="stylesheet" type="text/css" href="css/calendarorganizer.min.css"/> <!--MMTZ añadido-->
+
+
+        <!--FIN MMTZ añadido-->
+        <script src="js/DiasDatos.js"></script> <!--Script importante que contiene los datos del calendario-->
+
+
+
+        <!--MMTZ añadido-->
+        <style type="text/css">
+            #calendarContainer,
+            #organizerContainer {
+            float: left;
+            margin: 10px;
+            text-align: center;
+            margin-bottom: 20px; /* between paragraphs */
+            }
+
+            #calendario_lista {
+                list-style-type: none;
+                margin: 0px;
+                padding: 4px;
+                text-align: left;
+            }
+            #fecha_calendario_disponible{
+                width: 50px;
+                height: 20px;
+                font-size: 20px;
+                line-height: 12px;
+                color: #000000;
+            }
+            #fecha_calendario_no_disponible{
+                width: 50px;
+                height: 20px;
+                font-size: 20px;
+                line-height: 12px;
+                color: #654b4b;
+            }
+            #calendario_ul_lista_hora {
+                font-size: 12px;
+                text-align: left;
+                line-height: 14px;
+                color: #921843;
+            }
+            #calendario_ul_lista_fecha {
+                font-size: 12px;
+                line-height: 14px;
+                text-align: justify;
+                padding-left: inherit;
+            }
+
+            .astext {
+                background:none;
+                border:none;
+                margin:0;
+                padding:0;
+                cursor: pointer;
+                
+            }
+            .astext:hover {
+                background: rgb(232, 190, 206);;
+            }
+
+        </style>
+
+    <style>
+
+    </style>
+
+        <!--MMTZ añadido-->
+
     </head>
     <body data-mobile-nav-style="classic">
         <!--start header-->
         <header>
                         <!-- start navigation -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top header-reverse-scroll">
-                <div class="container-fluid nav-header-container">
-                    <div class="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
-                        <a class="navbar-brand" href="home.php.html">
-                            <img src="images/logo-golden-white.png" data-at2x="images/logo-golden-white@2x.png" class="default-logo" alt="">
-                            <img src="images/logo-golden-black.png" data-at2x="images/logo-golden-black@2x.png" class="alt-logo" alt="">
-                            <img src="images/logo-golden-black.png" data-at2x="images/logo-golden-black@2x.png" class="mobile-logo" alt="">
-                        </a>
-                    </div>
-                    <div class="col-auto col-lg-8 menu-order px-lg-0">
-                        <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                            <ul class="navbar-nav alt-font">
-                                <li class="nav-item dropdown">
-                                    <a href="home.php.html" class="nav-link text-uppercase">Inicio</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="convocatoria23.php.html" class="nav-link text-uppercase">Convocatoria</a>
-                                </li>
-                                <li class="nav-item dropdown simple-dropdown">
-                                    <a href="convocatoria23.php.html" class="nav-link text-uppercase">Registro</a>
-                                    <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                                   		<ul class="dropdown-menu" role="menu">
-                                        	<li class="dropdown">
-                                            	<a href="registro2023.php.html">Registro de asistentes</a>
-                                        	</li>
-                                        	<li class="dropdown">
-                                           		<a href="ponencia.php.html">Registro de contribuciones</a>
-                                        	</li>
-                                        	<li class="dropdown">
-                                           		<a href="registro_premio.php.html">Registro al premio a la práctica docente innovadora</a>
-                                        	</li>
-                                    	</ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="home2022.php.html" class="nav-link text-uppercase">Edición 2022</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="col-auto col-lg-2 text-end pe-0 font-size-0">
-                        <div class="header-button d-none d-md-inline-block">
-                            <a href="doc/convoca23/premio.pdf" target="_blank" class="btn btn-very-small btn-yellow-ochre btn-round-edge-small section-link">PREMIO<br>
- Práctica Docente Innovadora</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top header-reverse-scroll">
+                            <div class="container-fluid nav-header-container">
+                                <div class="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
+                                    <a class="navbar-brand" href="home.php.html">
+                                        <img src="images/logo-golden-white@2x.png" data-at2x="images/logo-golden-white@2x.png" class="default-logo" alt="" width="111" height="36">
+                                        <img src="images/logo-golden-black@2x.png" data-at2x="images/logo-golden-black@2x.png" class="alt-logo" alt="" width="0" height="0">
+                                        <img src="images/logo-golden-black@2x.png" data-at2x="images/logo-golden-black@2x.png" class="mobile-logo" alt="" width="0" height="0">
+                                    </a>
+                                </div>
+                                <div class="col-auto col-lg-8 menu-order px-lg-0">
+                                    <button class="navbar-toggler float-end collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation" aria-expanded="false">
+                                        <span class="navbar-toggler-line"></span>
+                                        <span class="navbar-toggler-line"></span>
+                                        <span class="navbar-toggler-line"></span>
+                                        <span class="navbar-toggler-line"></span>
+                                    </button>
+                                    <div class="navbar-collapse justify-content-center collapse" id="navbarNav" style="">
+                                        <ul class="navbar-nav alt-font">
+                                            <li class="nav-item dropdown">
+                                                <a href="home.php.html" class="nav-link text-uppercase">Inicio</a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a href="programa.php.html" class="nav-link text-uppercase">Horario completo</a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a href="convocatoria23.php.html" class="nav-link text-uppercase">Concurso de Talentos</a>
+                                            </li>
+                                            
+                                            <li class="nav-item dropdown">
+                                                <a href="home2022.php.html" class="nav-link text-uppercase">Horario Eventos</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-auto col-lg-2 text-end pe-0 font-size-0">
+                                    <div class="header-button d-none d-md-inline-block">
+                                        <a href="doc/convoca23/premio.pdf" target="_blank" class="btn btn-very-small btn-yellow-ochre btn-round-edge-small section-link"
+                                        style="font-size: 12px;">
+             Bases para participar en Talent Music show</a>
+             
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
             <!-- end navigation -->
         </header>
         <!-- end header -->
+
         <!-- start hero section -->
-        <section class="parallax p-0" data-parallax-background-ratio="0.5" style="background-image: url(images/cgai/portada2023.jpg);">
+        <section class="parallax p-0" data-parallax-background-ratio="0.5" style="background-image: url(images/cgai/fondo-cosa.png); background-position: inherit;">
             <div class="opacity-extra-medium-2 bg-extra-dark-gray"></div>
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-8 col-md-10 col-lg-8 full-screen flex-column d-flex justify-content-center text-center md-landscape-h-600px">
                         <div class="border-color-sky-blue border-all border-width-3px padding-5-half-rem-all lg-padding-3-half-rem-all xs-padding-2-rem-all">
-                            <span class="alt-font text-extra-large letter-spacing-1px text-orange opacity-9 d-block" style="font-family: 'Leo Rounded'; font-weight: bold; font-style: normal;">Encuentro de Innovación Educativa</span><br>
-                            <span class="alt-font text-extra-large-3 font-weight-600 text-white text-uppercase  margin-3-half-rem-bottom mx-auto">Ecosistemas de Aprendizaje,<br>
-								formación integral y <br>
-							éxito estudiantil</span>
-                            <span class="alt-font text-extra-large-3 text-uppercase letter-spacing-3px text-white opacity-7 d-block" style="font-family: 'Leo Rounded'; font-weight: 300; font-style: normal;">16-18/MAYO/2023</span><br>
+                            <span class="alt-font text-extra-large letter-spacing-1px text-orange opacity-9 d-block" style="font-family: 'Leo Rounded';font-weight: bold;font-style: normal;font-size: 40px;">iLABTDI Presenta:</span><br>
+                            <span class="alt-font text-extra-large-3 font-weight-600 text-white text-uppercase  margin-3-half-rem-bottom mx-auto">1° Jornada de la innovación<br>y desarrollo tecnológico<br>para la innovación</span>
+                            <span class="alt-font text-extra-large-3 text-uppercase letter-spacing-3px text-white opacity-7 d-block" style="font-family: 'Leo Rounded'; font-weight: 200; font-style: normal;">17 de Abril<br> al
+                                <br>12 de Mayo</span>
+                                <br>
                             <span class="alt-font text-large text-uppercase letter-spacing-3px text-orange opacity-9 d-block">P R Ó X I M A M E N T E</span>
                         </div>
                     </div>
@@ -100,192 +168,524 @@
         </section>
         <!-- end hero section -->
         
+
+
+        
+        
         <!-- start section -->
         <section class="p-0 overflow-visible  bg-extra-dark-gray">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 overlap-section px-0">
-                        <div class=" bg-gradient-innova box-shadow-medium padding-4-rem-lr padding-2-half-rem-tb padding-4-rem-tb sm-box-shadow-none sm-border-bottom border-color-medium-gray">
+                    <div >   
+                        <div class=" bg-gradient-innova box-shadow-medium padding-4-rem-lr padding-2-half-rem-tb padding-4-rem-tb sm-box-shadow-none sm-border-bottom border-color-medium-gray" >
                             <div class="row align-items-center justify-content-center">
-                        <div class="col-12 col-xl-10 col-lg-8 offset-xl-1 col-md-8 padding-30px-bottom md-padding-6-rem-bottom text-center text-lg-start wow animate__fadeIn" data-wow-delay="0.4s">
-                            <span class="alt-font font-weight-500 text-large text-white text-decoration-line-bottom d-inline-block margin-35px-bottom letter-spacing-minus-1-half">
-                                La Universidad de Guadalajara invita a participar <br>
-                                en las actividades académicas del INNOVA FORUM</span>
-                            <h4 class="alt-font font-weight-400 text-white-transparent letter-spacing-minus-1px margin-45px-bottom"><span class="font-weight-600">Convocatoria</span> para presentar contribuciones.</h4>
-                            <a href="convocatoria23.php.html" class="btn btn-large btn-expand-ltr text-white section-link">Ir a convocatoria<span class="bg-extra-dark-gray"></span></a>
-                        </div>
-                    </div>
+                                <div class="col-12 col-xl-10 col-lg-8 offset-xl-1 col-md-8 padding-30px-bottom md-padding-6-rem-bottom text-center text-lg-start wow animate__fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                                    <span class="alt-font font-weight-500 text-large text-white text-decoration-line-bottom d-inline-block margin-35px-bottom letter-spacing-minus-1-half" style="margin-bottom: px;">iLabTDI te invita a participar en el <br></span><br>
+                                    <div style="text-align: center; font-size: 70px;line-height: 70px;font-weight: bold; color: #f16f50">Amateur Music Talent Show</div>
+                                    <h4 class="alt-font font-weight-400 text-white-transparent letter-spacing-minus-1px margin-45px-bottom" style="margin-bottom: 10px; padding-top: 20px;"><span class="font-weight-600">Formulario</span> para participar.</h4>
+
+
+                                    <div class="row row-cols-1 row-cols-lg-2 row-cols-sm-2" style="margin-bottom: 20px; margin-top: 30px;">
+                                        <!-- start feature box item -->
+                                        <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                            <i class="feather icon-feather-map-pin icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block"></i>
+                                            <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom" >Lugar</div>
+                                            <p class="w-70 lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto" style="color:white; font-size: 12px; line-height: 15px;">Explanada del auditorio Ingeniero Jorge Matute Remus</p>
+                                        </div>
+                                        <!-- end feature box item -->
+                                        <!-- start feature box item -->
+                                        <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                            <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block"></i>
+                                            <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">FECHA</div>
+                                            <p class="w-70 lg-w-100 sm-margin-10px-bottom mx-auto" style="color:white; font-size: 12px; line-height: 15px;">5 de Mayo</p>
+                                        </div>
+                                        <!-- end feature box item -->
+                                        <!-- start feature box item -->
+                                        <!-- <div class="col text-center xs-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                            <i class="feather icon-feather-mail icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block"></i>
+                                            <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">Más información</div>
+                                            <p class="w-70 lg-w-100 sm-margin-10px-bottom mx-auto"><a href="mailto:innova.forum@udg.mx" class="text-golden-hover" style="color:white;  font-size: 12px; line-height: 15px;">innova.forum@udg.mx</a></p>
+                                        </div>
+                                        -->
+                                        <!-- end feature box item -->
+                                    </div>
+                                    
+
+                                    <a href="doc/convoca23/premio.pdf" target="_blank" class="btn btn-very-small btn-yellow-ochre btn-round-edge-small section-link" style="font-size: 13px;padding: 12px 32px;margin-right: 30px;">Consulta las bases</a>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDPpOcZEgvZdulYl2uFWKMxd9ZZRTCF18yiOYaboHnqva_-A/viewform" class="btn btn-large btn-expand-ltr text-white section-link" style="
+                                    float: right;
+                                ">Ir a Formulario<span class="bg-extra-dark-gray"></span></a>
+                                
+                                
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end section -->
+
         
         <!-- start section -->
-        <section class="big-section bg-extra-dark-gray">
+        <section class="parallax wow animate__fadeIn" data-parallax-background-ratio="0.1" style="background-image:url('images/cgai/Torneo-Final.png');">
+            <div class="opacity-medium bg-dark-slate-blue"></div>
             <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-xl-7 col-md-8 col-sm-10 position-relative text-center text-md-start sm-margin-30px-bottom">
+                        <h4 class="alt-font font-weight-600 text-white mb-0">Gearing your company through an Innovative strategy</h4>
+                    </div>
+                    <div class="col-12 col-xl-5 col-md-4 position-relative text-center text-md-end">
+                        <a href="#" class="btn btn-large btn-gradient-shamrock-green-light-orange">VER TORNEOS DISPONIBLES</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+       
+
+        <!-- start section -->
+        <section class="big-section bg-extra-dark-gray" style="padding: 10px 0;">
+            <div class="container">
+                <script src="js/calendarorganizer.min.js"></script>
+                <div id="calendarContainer"></div>
+
+                
+                <div id="calendarContainer">
+                    <div id="calendarContainer">
+                        <style>.cjslib-day-indicator { color: #C2185B; background-color: #C2185B; } .cjslib-indicator-type-numeric { color: #FFFFFF; } .cjslib-day.cjslib-day-today > .cjslib-day-num { border-color: #C2185B !important; }</style>
+                        <div class="cjslib-calendar cjslib-size-medium" >
+                           
+                            <div class="cjslib-month" style="background-color: rgb(233, 30, 99); color: rgb(255, 255, 255); width:calc(100%); font-size: 20px; padding: 1px 5px;">
+                                <span id="calendarContainer-month">Abril</span>
+                            </div>
+                            <div class="cjslib-labels" style="background-color: rgb(194, 24, 91); color: rgb(248, 187, 208); line-height:10px">
+                                <span id="calendarContainer-label-1">Lun</span>
+                                <span id="calendarContainer-label-2">Mar</span>
+                                <span id="calendarContainer-label-3">Mie</span>
+                                <span id="calendarContainer-label-4">Jue</span>
+                                <span id="calendarContainer-label-5">Vie</span>
+                                <span id="calendarContainer-label-6">Sab</span>
+                                <span id="calendarContainer-label-7">Dom</span>
+                            </div>
+
+
+                           <div class="cjslib-days">
+                            <div class="cjslib-row">
+
+
+                                <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-17">  
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-17" id="calendarContainer-day-17" style="cursor: auto;">
+                                    <!-- <span class="cjslib-day-num" id="calendarContainer-day-num-1">17</span>-->
+                                    
+                                </label>
+                                
+                                <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-18">
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-18" id="calendarContainer-day-18" style="cursor: auto;">
+                                    <!--<span class="cjslib-day-num" id="calendarContainer-day-num-23">18</span>-->
+
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-19">
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-19"
+                                    id="calendarContainer-day-19" style="cursor: auto;">    
+                                    
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-20">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-20"
+                                    id="calendarContainer-day-20" style="cursor: auto;">
+
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-21">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-21"
+                                    id="calendarContainer-day-21" style="cursor: auto;">
+
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-22">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-22"
+                                    id="calendarContainer-day-22" style="background-color: #eceaea; cursor: auto;">
+                                    
+                                    <ul id="calendario_lista">
+                                        <li id="fecha_calendario_no_disponible">
+                                            22
+                                        </li>
+                                    </ul>
+                                    
+                                </label>
+                                
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-23"
+                                    id="calendarContainer-day-23" style="background-color: #eceaea; cursor: auto;">
+
+                                    <ul id="calendario_lista">
+                                        <li id="fecha_calendario_no_disponible">
+                                            23
+                                        </li>
+                                    </ul>
+                                    
+                                </label>
+                                
+                            </div>
+                                
+                                <div class="cjslib-row">    
+                                <label class="calendarContainer cjslib-day cjslib-day-listed"
+                                    for="calendarContainer-day-radio-24" id="calendarContainer-day-24" style="cursor: auto;">
+                                    
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-25">
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-25"
+                                    id="calendarContainer-day-25" style="cursor: auto;">
+                                   
+                                </label>
+
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-26">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-26"
+                                    id="calendarContainer-day-26" style="cursor: auto;">
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-27">
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-27"
+                                    id="calendarContainer-day-27" style="cursor: auto;">
+                                                                   
+                                </label>
+                                
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-28">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-28"
+                                    id="calendarContainer-day-28" style="cursor: auto;">
+                                    
+                                </label>
+                                
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-29">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-29"
+                                    id="calendarContainer-day-29" style="background-color: #eceaea; cursor: auto;">
+                                    <ul id="calendario_lista">
+                                        <li id="fecha_calendario_no_disponible">
+                                            29
+                                        </li>
+                                    </ul>
+                                </label>
+                                
+                                
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-30" >
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-30"
+                                    id="calendarContainer-day-30" style="background-color: #eceaea; cursor: auto;">
+                                    <ul id="calendario_lista">
+                                        <li id="fecha_calendario_no_disponible">
+                                            30
+                                        </li>
+                                    </ul>
+                                </label>
+                                
+                                </div>
+                            </div>
+
+
+                            <div class="cjslib-month" style="background-color: rgb(233, 30, 99); color: rgb(255, 255, 255); width:calc(100%); font-size: 20px; padding: 1px 5px; ">
+                                <span id="calendarContainer-month">Mayo</span>
+                             </div>
+                             <div class="cjslib-labels" style="background-color: rgb(194, 24, 91); color: rgb(248, 187, 208); line-height:10px">
+                                <span id="calendarContainer-label-1">Lun</span>
+                                <span id="calendarContainer-label-2">Mar</span>
+                                <span id="calendarContainer-label-3">Mie</span>
+                                <span id="calendarContainer-label-4">Jue</span>
+                                <span id="calendarContainer-label-5">Vie</span>
+                                <span id="calendarContainer-label-6">Sab</span>
+                                <span id="calendarContainer-label-7">Dom</span>
+                            </div>
+
+
+                            <div class="cjslib-days">
+                                <div class="cjslib-row">
+                                    
+                                    <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios"
+                                        id="calendarContainer-day-radio-1">
+                                        <label class="calendarContainer cjslib-day cjslib-day-listed"
+                                        for="calendarContainer-day-radio-1" id="calendarContainer-day-1" style="cursor: auto;">
+                                        
+                                    </label>
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-2">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-2"
+                                        id="calendarContainer-day-2" style="cursor: auto;">
+                                        
+                                    </label>
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-3">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-3"
+                                        id="calendarContainer-day-3" style="cursor: auto;">
+                                              
+                                    </label>
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-4">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-4"
+                                        id="calendarContainer-day-4" style="cursor: auto;">
+                                         
+                                    </label>
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-5">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-5"
+                                        id="calendarContainer-day-5" style="cursor: auto;">
+                                        
+                                    </label>
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-6">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-6"
+                                        id="calendarContainer-day-6" style="background-color: #eceaea; cursor: auto;">
+                                        <ul id="calendario_lista">
+                                            <li id="fecha_calendario_no_disponible">
+                                                6
+                                            </li>
+                                        </ul>
+                                    </label>
+
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-7">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-7"
+                                        id="calendarContainer-day-7" style="background-color: #eceaea; cursor: auto;">
+                                        <ul id="calendario_lista">
+                                            <li id="fecha_calendario_no_disponible">
+                                                7
+                                            </li>
+                                        </ul>
+                                        
+                                    </label>
+                                </div>
+
+                                <div class="cjslib-row">
+                                    <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios"
+                                        id="calendarContainer-day-radio-8">
+                                        <label class="calendarContainer cjslib-day cjslib-day-listed"
+                                        for="calendarContainer-day-radio-8" id="calendarContainer-day-8" style="cursor: auto;">
+                                        
+                                    </label>
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-9">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-9"
+                                        id="calendarContainer-day-9" style="cursor: auto;">
+                                        
+                                    </label>
+                                    
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-10">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-10"
+                                        id="calendarContainer-day-10" style="cursor: auto;">
+                                        
+                                    </label>
+                                    
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-11">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-11"
+                                        id="calendarContainer-day-11" style="cursor: auto;">
+                                        
+                                    </label>
+                                        
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-12">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-12"
+                                        id="calendarContainer-day-12" style="cursor: auto;">
+                                        
+                                    </label>
+
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-13"><label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-13"
+                                        id="calendarContainer-day-13" style="background-color: #eceaea; cursor: auto;">
+                                        
+                                        <ul id="calendario_lista">
+                                            <li id="fecha_calendario_no_disponible">
+                                                13
+                                            </li>
+                                        </ul>
+                                    </label>
+
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-14">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-14"
+                                        id="calendarContainer-day-14" style="background-color: #eceaea; cursor: auto;">
+                                        <ul id="calendario_lista">
+                                            <li id="fecha_calendario_no_disponible">
+                                                14
+                                            </li>
+                                        </ul>
+                                        
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- crea las cosas de los calendarios --> 
+                    <script>
+
+                        function crear_dia_HTML( dia_num){
+
+                            Array_Dia = DiasDatos[dia_num] ;
+
+                            //Carga Datos del Array
+                            var id_actual = Array_Dia.IDTAg ;
+
+                            var txt_dia = Array_Dia.Dia_num;
+
+
+                            // elementos
+                            var a = document.getElementById("calendarContainer-day-"+ txt_dia);
+
+
+                            var Creacion_HTML = ""
+
+                            Creacion_HTML += `
+                            <ul id="calendario_lista">
+                                <li id="fecha_calendario_disponible">
+                                ` + txt_dia +  `
+                                </li>
+                            `
+
+                            //hace for de todos los programas
+                            var programas_num = Object.keys(Array_Dia.Eventos).length; 
+                            if (programas_num !== 0) {
+                                for (var i = 1; i < programas_num+1; i = i + 1) {       
+                                    programa_i = Array_Dia.Eventos[i];
+                                    //console.log(programa_i)
+
+                                    Creacion_HTML += `<button class="astext" onclick = "fun('`+ programa_i.Tema +`', '`+ programa_i.Desde +`', '`+ programa_i.Hasta +`', '`+ programa_i.Ponente +`', '`+ programa_i.Lugar +`', '`+ Array_Dia.Fecha  +`')">`
+                                    Creacion_HTML += `<li id="calendario_ul_lista_hora">` + programa_i.Desde + `</li>` ;
+                                    //Creacion_HTML += `<button class="astext" onclick = "fun()">` + programa_i.Tema + `</button> `
+                                    Creacion_HTML += `<li id="calendario_ul_lista_fecha">` + programa_i.Tema + `</li>` ;
+                                    Creacion_HTML += `</button><br>`
+                                }
+                            } else {
+                                a.style.cssText +='background-color: #eceaea; cursor: auto;';
+                            }
+
+                            Creacion_HTML += "</ul>" //cierra
+                            a.innerHTML = Creacion_HTML;
+
+                            }// función crear dia HTML
+                            
+                            //carga la información de cada día
+                            for (var i = 1; i <= 20; i = i + 1) {
+                                crear_dia_HTML(i)
+                            }
+                        </script>
+
+                    <script>  
+                        function fun(Tema, Desde, Hasta, Ponente, Lugar, Fecha) {  
+                        alert("Evento: "+ Tema + "\n" + 
+                        "FECHA: "+ Fecha + " - "+ "De " + Desde + " a " + Hasta + "h"+ "\n"+
+                        "Ponente: "+ Ponente + "\n"+
+                        "Lugar: "+ Lugar  );  
+                        }  
+                    </script>  
+
+                <!-- CONFIGURA EL TAMAÑO DEL CALENDARIO --> 
+                <script>
+                    const style = document.createElement('style');
+                    style.textContent = `
+                    .cjslib-calendar.cjslib-size-medium {
+                        width: 100%; 
+                        height: 650px;
+                    }
+                    `;
+                    //750px 
+                    document.head.appendChild(style);
+                </script>
+
+                
+     
+
+
+                <!-- COMENTARIO <div id="organizerContainer"></div> --> 
+                <!--
                 <div class="row justify-content-center">
                     <div class="col-md-12 text-center margin-six-bottom">
                         <h6 class="alt-font text-white font-weight-500">Edición 2022</h6>
 						<p>La 1ª Edición de INNOVA FORUM (antes Conectáctica) tuvo las siguientes participaciones</p>
                     </div>
                 </div>
-                <div class="row">
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="11"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Conferencias Magistrales</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="2"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Paneles</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.3s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="1"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Foro de Buenas Prácticas</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start margin-six-bottom wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="1"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Panel OCDE</span>
-                    </div>
-                    <!-- end counter item -->
-					
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="13"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Talleres</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="300"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Participantes de Taller</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.3s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="64"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Ponencias</span>
-						<span class="alt-font d-block letter-spacing-2px text-small">141 ponentes</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start margin-six-bottom wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="8"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Pósters</span>
-						<span class="alt-font text-small d-block letter-spacing-2px">17 participantes</span>
-                    </div>
-                    <!-- end counter item -->
-					
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="5"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Charlas Relámpago</span>
-                    </div>                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="5"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Presentaciones de libros</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.3s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="27"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Moderadores</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start margin-six-bottom wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="30"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Músicos</span>
-                    </div>
-                    <!-- end counter item -->
-					
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="94"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Organizadores</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="18"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Workshops</span>
-                    </div>
-                    <!-- end counter item -->
-                    <!-- start counter item -->
-                    <div class="col-12 col-lg-2 offset-lg-1 col-md-3 col-sm-6 text-center text-md-start margin-six-bottom wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center justify-content-md-start">
-                            <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600 letter-spacing-minus-3px mb-0 sm-letter-spacing-minus-1-half" data-to="983"></h2><span class="text-light-brownish-orange title-extra-small font-weight-500 margin-5px-left"></span>
-                        </div>
-                        <span class="alt-font text-medium text-uppercase d-block letter-spacing-2px">Asistentes</span>
-                    </div>
-                    <!-- end counter item -->
-                </div>
+                --> 
+                
+                
+                
             </div>
         </section>
         <!-- end section -->
 		
+
+
+        
         <!-- start section -->
         
-        <section class="big-section">
+        <section class="big-section" 
+        style="padding: 40px;">
             <div class="container">
                 <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2">
                     <!-- start feature box item -->
                     <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.1s">
                         <i class="feather icon-feather-map-pin icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block"></i>
-                        <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">VENUE</div>
-                        <p class="w-70 lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto">Conjunto Santander de Artes Escénicas</p>
+                        <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">LUGAR</div>
+                        <p class="w-70 lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto">CUCEI</p>
                     </div>
                     <!-- end feature box item -->
                     <!-- start feature box item -->
                     <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.2s">
                         <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block"></i>
                         <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">FECHA</div>
-                        <p class="w-70 lg-w-100 sm-margin-10px-bottom mx-auto">16-18 de Mayo</p>
+                        <p class="w-70 lg-w-100 sm-margin-10px-bottom mx-auto">17 de Abril al 12 de Mayo</p>
                     </div>
                     <!-- end feature box item -->
                     <!-- start feature box item -->
+                    <!--
                     <div class="col text-center xs-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.3s">
                         <i class="feather icon-feather-mail icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block"></i>
                         <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">Más información</div>
                         <p class="w-70 lg-w-100 sm-margin-10px-bottom mx-auto"><a href="mailto:innova.forum@udg.mx" class="text-golden-hover">innova.forum@udg.mx</a></p>
                     </div>
+                    -->
                     <!-- end feature box item -->
                 </div>
             </div>
@@ -293,30 +693,27 @@
         
         <!-- start section -->
          <!-- start section -->
-        <section class="half-section bg-gradient-innova wow animate__fadeIn">
+        <section class="half-section bg-gradient-innova wow animate__fadeIn" 
+        style="background-image: linear-gradient(to right, #9ebdc6, #467dcc);">
             <div class="container">
                 <div class="row">
                     <div class="col-12 position-relative">
                         <div class="swiper-container text-center" data-slider-options='{ "slidesPerView": 1, "loop": true, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 3 } } }'>
                             <div class="swiper-wrapper">
                                 <!-- DIAMANTE -->
-                                <!-- start slider item --><div class="swiper-slide"><a href="http://www.cga.udg.mx/" target="_blank"><img alt="Coordinación General Académica de Innovación" src="images/cgai/sponsor/cgai2.png"></a></div>
+                                <!-- start slider item --><div class="swiper-slide"><a href="http://www.cga.udg.mx/" target="_blank"><img alt="iLabTDI" src="images/cgai/sponsor/iLabTDI.png"></a></div>
                                 <!-- end slider item -->
-                                <!-- start slider item --><div class="swiper-slide"><a href="http://conectactica.udg.mx/" target="_blank"><img alt="Conectactica" src="images/cgai/sponsor/conectactica2.png"></a></div>
+                                <!-- start slider item --><div class="swiper-slide"><a href="http://conectactica.udg.mx/" target="_blank"><img alt="Inventores" src="images/cgai/sponsor/inventores.png"></a></div>
                                 <!-- end slider item -->
-                                <!-- start slider item --><div class="swiper-slide"><a href="https://es.coursera.org/" target="_blank"><img alt="Coursera" src="images/cgai/sponsor/coursera2.png"></a></div>
+                                <!-- start slider item --><div class="swiper-slide"><a href="https://es.coursera.org/" target="_blank"><img alt="CIE" src="images/cgai/sponsor/CIE.PNG"></a></div>
                                 <!-- end slider item -->
-                                <!-- start slider item --><div class="swiper-slide"><a href="https://proulex.com" target="_blank"><img alt="PROULEX Centro de Idiomas" src="images/cgai/sponsor/proulex2.png"></a></div>
+                                <!-- start slider item --><div class="swiper-slide"><a href="https://proulex.com" target="_blank"><img alt="RADIO CUCEI" src="images/cgai/sponsor/Radiocucei.png"></a></div>
                                 <!-- end slider item -->
-                                <!-- start slider item --><div class="swiper-slide"><a href="https://fundacion.udg.mx/" target="_blank"><img alt="Fundación de la Universidad de Guadalajara A.C." src="images/cgai/sponsor/fundacion2.png"></a></div>
+                                <!-- start slider item --><div class="swiper-slide"><a href="https://fundacion.udg.mx/" target="_blank"><img alt="Red universitaria de guadalajara." src="images/cgai/sponsor/udglogo.png"></a></div>
                                 <!-- end slider item -->
-                                <!-- start slider item --><div class="swiper-slide"><a href="https://leonesnegrosudg.mx/" target="_blank"><img alt="Leones Negros" src="images/cgai/sponsor/leones2.png"></a></div>
+                                <!-- start slider item --><div class="swiper-slide"><a href="https://fundacion.udg.mx/" target="_blank"><img alt="CUCEI" src="images/cgai/sponsor/cucei.png"></a></div>
                                 <!-- end slider item -->
-                                <!-- start slider item --><div class="swiper-slide"><a href="https://udgtv.com/" target="_blank"><img alt="Canal 44" src="images/cgai/sponsor/udgtv.png"></a></div>
-                                <!-- start slider item --><div class="swiper-slide"><a href="https://www.conjuntosantander.com" target="_blank"><img alt="Conjunto Santander de Artes Escénicas" src="images/cgai/sponsor/santander2.png"></a></div>
-                                <!-- end slider item -->
-                                <!-- start slider item --><div class="swiper-slide"><a href="https://www.universia.net/" target="_blank"><img alt="Portal de las Universidades Mexicanas" src="images/cgai/universia2.png"></a></div>
-                                <!-- end slider item -->
+                                
                             </div>
                         </div>
                         <!-- start slider navigation -->
@@ -340,7 +737,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 sm-margin-15px-bottom">
                         <ul class="alt-font footer-horizontal-link d-flex flex-column flex-sm-row justify-content-center justify-content-md-start text-center text-uppercase text-small">
-                            <li><a href="home2022.php.html" class="text-iris-blue-hover">Edición 2022</a></li>
+                          <!-- end section  <li><a href="home2022.php.html" class="text-iris-blue-hover">Edición 2022</a></li> -->
                         </ul>
                     </div>
                     <div class="col-12 col-md-6 text-center text-md-end last-paragraph-no-margin">
@@ -356,5 +753,16 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/theme-vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+        
     </body>
 </html>
+
+
+
+
+
+
