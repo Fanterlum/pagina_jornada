@@ -1,0 +1,1214 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>iLabTDI – Jornada del Innovador</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="iLabTDI">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+        <meta name="description" content="Litho is a clean and modern design, BootStrap 5 responsive, business and portfolio multipurpose HTML5 template with 37+ ready homepage demos.">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" type="text/css" href="css/font-icons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+
+        <link rel="stylesheet" type="text/css" href="css/calendarorganizer.min.css"/> <!--MMTZ añadido-->
+
+
+        <!--FIN MMTZ añadido-->
+        <script src="js/DiasDatos.js"></script> <!--Script importante que contiene los datos del calendario-->
+
+
+
+        <!--MMTZ añadido-->
+        <style type="text/css">
+            #calendarContainer,
+            #organizerContainer {
+            float: left;
+            margin: 10px;
+            text-align: center;
+            margin-bottom: 20px; /* between paragraphs */
+            }
+
+            #calendario_lista {
+                list-style-type: none;
+                margin: 0px;
+                padding: 4px;
+                text-align: left;
+            }
+            #fecha_calendario_disponible{
+                width: 50px;
+                height: 20px;
+                font-size: 20px;
+                line-height: 12px;
+                color: #000000;
+            }
+            #fecha_calendario_no_disponible{
+                width: 50px;
+                height: 20px;
+                font-size: 20px;
+                line-height: 12px;
+                color: #654b4b;
+            }
+            #calendario_ul_lista_hora {
+                font-size: 12px;
+                text-align: left;
+                line-height: 14px;
+                color: #921843;
+            }
+            #calendario_ul_lista_fecha {
+                font-size: 12px;
+                line-height: 14px;
+                text-align: justify;
+                padding-left: inherit;
+            }
+
+            .astext {
+                background:none;
+                border:none;
+                margin:0;
+                padding:0;
+                cursor: pointer;
+                
+            }
+            .astext:hover {
+                background: rgb(232, 190, 206);;
+            }
+
+        </style>
+
+    <style>
+
+    </style>
+
+        <!--MMTZ añadido-->
+
+    </head>
+    <body data-mobile-nav-style="classic">
+        <!--start header-->
+        <header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                        <!-- start navigation -->
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top header-reverse-scroll">
+                            <div class="container-fluid nav-header-container">
+                                <div class="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
+                                    <a class="navbar-brand" href="home.php.html">
+                                        <img src="images/logo-golden-white@2x.png" data-at2x="images/logo-golden-white@2x.png" class="default-logo" alt="" width="111" height="36">
+                                        <img src="images/logo-golden-black@2x.png" data-at2x="images/logo-golden-black@2x.png" class="alt-logo" alt="" width="0" height="0">
+                                        <img src="images/logo-golden-black@2x.png" data-at2x="images/logo-golden-black@2x.png" class="mobile-logo" alt="" width="0" height="0">
+                                    </a>
+                                </div>
+                                <div class="col-auto col-lg-8 menu-order px-lg-0">
+                                    <button class="navbar-toggler float-end collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation" aria-expanded="false">
+                                        <span class="navbar-toggler-line"></span>
+                                        <span class="navbar-toggler-line"></span>
+                                        <span class="navbar-toggler-line"></span>
+                                        <span class="navbar-toggler-line"></span>
+                                    </button>
+                                    <div class="navbar-collapse justify-content-center collapse" id="navbarNav" style="">
+                                        <ul class="navbar-nav alt-font">
+                                            <li class="nav-item dropdown">
+                                                <a href="home.html" class="nav-link text-uppercase">Inicio</a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a href="programa.html" class="nav-link text-uppercase">Horario completo</a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a href="torneos.html" class="nav-link text-uppercase">Torneo de Videojuegos</a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a href="convocatoria23.php.html" class="nav-link text-uppercase">Talent Show</a>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-auto col-lg-2 text-end pe-0 font-size-0">
+                                    
+                                </div>
+                            </div>
+                        </nav>
+            <!-- end navigation -->
+        </header>
+        <!-- end header -->
+
+
+
+
+
+        <!-- start hero section -->
+        <section class="parallax wow animate__fadeIn" data-parallax-background-ratio="0.5" style="background-image: url(&quot;images/torneo/gamingbackground1.jpg&quot;); visibility: visible; animation-name: fadeIn;">
+            <div class="opacity-medium bg-dark-slate-blue"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-xl-7 col-md-8 col-sm-10 position-relative text-center text-md-start sm-margin-30px-bottom">
+                        <h4 class="alt-font font-weight-600 text-white mb-0">Únete a nuestro torneo gaming y demuestra tus habilidades</h4>
+
+                        <br>
+                        <h6 class="alt-font cd-headline zoom text-white margin-seven-bottom">
+                            <span>Participa en diferentes juegos y conviértete en el campeón de CUCEI en</span>
+                            <span class="cd-words-wrapper text-base-color font-weight-500" style="width: 75.3625px;">                                
+                                <b class="is-visible">COD Mobile</b>
+                                <b class="is-hidden">Ajedréz</b>
+                                <b class="is-hidden">Fifa 19</b>
+                                <b class="is-hidden">Mario Kart 8</b>
+                                <b class="is-hidden">Super Smash Bros Ultimate</b>
+                                <b class="is-hidden">COD Mobile</b>
+                                <b class="is-hidden">Torneo de Rubik</b>
+                                <b class="is-hidden">Piedra, Papel y Tijera</b>
+                            </span>
+                        </h6>
+
+                    </div>
+                    <div class="col-12 col-xl-5 col-md-4 position-relative text-center text-md-end">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDPpOcZEgvZdulYl2uFWKMxd9ZZRTCF18yiOYaboHnqva_-A/viewform" class="btn btn-large btn-gradient-sky-blue-pink">Formulario de Inscripción</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end header -->
+
+
+
+
+
+
+
+
+
+
+        
+        <!-- start hero section -->
+        <section class="big-section wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center margin-seven-bottom">
+                        <h6 class="alt-font text-extra-dark-gray font-weight-500">TORNEOS</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 tab-style-06 wow animate__fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <!-- start tab navigation -->
+                        <ul class="nav nav-tabs text-center justify-content-center">
+                            <li class="nav-item"><a class="alt-font nav-link text-uppercase active" data-bs-toggle="tab" href="#monday"><span>Viernes</span>21 de Abril</a></li>
+                            <li class="nav-item"><a class="alt-font nav-link text-uppercase" data-bs-toggle="tab" href="#tuesday"><span>Viernes</span>28 de Abril</a></li>
+                            <li class="nav-item"><a class="alt-font nav-link text-uppercase" data-bs-toggle="tab" href="#wednesday"><span>Viernes</span>5 de Mayo</a></li>
+                            <li class="nav-item"><a class="alt-font nav-link text-uppercase" data-bs-toggle="tab" href="#thursday"><span>Viernes</span>12 de Mayo</a></li>
+                        </ul>
+
+
+
+                        <!-- end tab navigation -->                        
+                        <div class="tab-content">
+                            <!-- start tab content -->
+                            <div class="tab-pane med-text fade in active show" id="monday">
+
+
+                                <div class="panel-group time-table">
+                                    <div class="panel border-color-black-transparent">
+                                        
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-map-pin margin-10px-right"></i>09:00 - 10:00</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                
+
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/torneo/FIFA.png" alt="" data-no-retina="">
+                                                </div>
+
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom">TORNEO FIFA 19 </span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>                           
+                                                </div>
+
+                                            </div>
+
+                                            <span class="panel-speaker"><i class="feather icon-feather-map-pin margin-10px-right"></i>Módulo Z1 y Z2 </span>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="panel border-color-black-transparent">
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right"></i>10:00 - 12:30</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/torneo/Ajedrez.png" alt="" data-no-retina="">
+                                                </div>
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom">TORNEO AJEDRÉZ</span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>
+                                                </div>
+                                            </div>
+                                            <span class="panel-speaker"><i class="feather icon-feather-user margin-10px-right"></i>By Jemmy Watson</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel border-color-transparent">
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right"></i>12:30 - 05:30</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/torneo/mariokart.png" alt="" data-no-retina="">
+                                                </div>
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom">TORNEO DE MARIO KART 8</span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>
+                                                </div>
+                                            </div>
+                                            <span class="panel-speaker"><i class="feather icon-feather-user margin-10px-right"></i>By Alexander Harvard</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                            <!-- start tab content -->
+                            <div class="tab-pane med-text fade in" id="tuesday">
+                                <div class="panel-group time-table">
+                                    <div class="panel border-color-black-transparent">
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right"></i>09:00 - 10:00</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/torneo/COD.png" alt="" data-no-retina="">
+                                                </div>
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom">TORNEO COD MOBILE</span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>                           
+                                                </div>
+                                            </div>
+                                            <span class="panel-speaker"><i class="feather icon-feather-user margin-10px-right"></i>By Edward Watson</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel border-color-black-transparent">
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right"></i>10:00 - 12:30</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/torneo/rubik.png" alt="" data-no-retina="">
+                                                </div>
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom">TORNEO AJDRÉZ</span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>
+                                                </div>
+                                            </div>
+                                            <span class="panel-speaker"><i class="feather icon-feather-user margin-10px-right"></i>By Jemmy Watson</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                            <!-- start tab content -->
+                            <div class="tab-pane med-text fade in" id="wednesday">
+                                <div class="panel-group time-table">
+                                    
+                                    
+                                    <div class="panel border-color-black-transparent">
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right"></i>09:00 - 10:00</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/home-events-conference-img-18.jpg" alt="" data-no-retina="">
+                                                </div>
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom">Amateur Music Talent Show</span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>                           
+                                                </div>
+                                            </div>
+                                            <span class="panel-speaker"><i class="feather icon-feather-user margin-10px-right"></i>By Edward Watson</span>
+                                        </div>
+                                    </div>
+
+                                   
+                                
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                            <!-- start tab content -->
+                            <div class="tab-pane med-text fade in" id="thursday">
+                                <div class="panel-group time-table">
+                                    <div class="panel border-color-black-transparent">
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right"></i>09:00 - 10:00</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/home-events-conference-img-18.jpg" alt="" data-no-retina="">
+                                                </div>
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom"></span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>                           
+                                                </div>
+                                            </div>
+                                            <span class="panel-speaker"><i class="feather icon-feather-user margin-10px-right"></i>By Edward Watson</span>
+                                        </div>
+                                    </div>
+                                    
+
+                                   
+
+
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                            <!-- start tab content -->
+                            <div class="tab-pane med-text fade in" id="friday">
+                                <div class="panel-group time-table">
+                                    <div class="panel border-color-black-transparent">
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right"></i>09:00 - 10:00</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/torneo/piedrapapeltijera.png" alt="" data-no-retina="">
+                                                </div>
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom">Cultures of creativity</span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>                           
+                                                </div>
+                                            </div>
+                                            <span class="panel-speaker"><i class="feather icon-feather-user margin-10px-right"></i>By Edward Watson</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel border-color-black-transparent">
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right"></i>10:00 - 12:30</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/home-events-conference-img-04.jpg" alt="" data-no-retina="">
+                                                </div>
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom">Reinventing experiences</span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>
+                                                </div>
+                                            </div>
+                                            <span class="panel-speaker"><i class="feather icon-feather-user margin-10px-right"></i>By Jemmy Watson</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel border-color-transparent">
+                                        <div class="panel-heading">
+                                            <span class="panel-time"><i class="feather icon-feather-clock margin-10px-right"></i>12:30 - 05:30</span>
+                                            <div class="panel-body feature-box feature-box-left-icon-middle">
+                                                <div class="feature-box-icon margin-30px-right md-margin-5px-right">
+                                                    <img class="rounded-circle w-110px h-110px border-all border-width-6px border-color-white box-shadow-large margin-15px-right md-w-70px md-h-70px" src="images/home-events-conference-img-05.jpg" alt="" data-no-retina="">
+                                                </div>
+                                                <div class="feature-box-content last-paragraph-no-margin">
+                                                    <div class="panel-title">
+                                                        <span class="text-extra-dark-gray d-inline-block font-weight-500 margin-5px-bottom">Human centered design</span>
+                                                    </div>
+                                                    <p class="w-65 lg-w-85 md-w-90 xs-w-100">Lorem ipsum is simply dummy text of the and typesetting industry lorem ipsum.</p>
+                                                </div>
+                                            </div>
+                                            <span class="panel-speaker"><i class="feather icon-feather-user margin-10px-right"></i>By Alexander Harvard</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ <!-- end header -->
+
+
+        
+        <!-- start hero section -->
+        <section class="parallax p-0" data-parallax-background-ratio="0.5" style="background-image: url(images/cgai/fondo-cosa.png); background-position: inherit;">
+            <div class="opacity-extra-medium-2 bg-extra-dark-gray"></div>
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-8 col-md-10 col-lg-8 full-screen flex-column d-flex justify-content-center text-center md-landscape-h-600px">
+                        <div class="border-color-sky-blue border-all border-width-3px padding-5-half-rem-all lg-padding-3-half-rem-all xs-padding-2-rem-all">
+                            
+                            
+                            
+                            <span class="alt-font text-extra-large letter-spacing-1px text-orange opacity-9 d-block" style="font-family: 'Leo Rounded';font-weight: bold;font-style: normal;font-size: 40px;">iLABTDI Presenta:</span><br>
+                            <span class="alt-font text-extra-large-3 text-gradient-orange-pink  font-weight-600 text-white text-uppercase  margin-3-half-rem-bottom mx-auto">1° Jornada de la innovación<br>y desarrollo tecnológico<br>para la innovación</span>
+                            
+                            
+                            <span class="alt-font text-extra-large-3 text-uppercase letter-spacing-3px text-white opacity-7 d-block" style="font-family: 'Leo Rounded'; font-weight: 200; font-style: normal;">17 de Abril<br> al
+                                <br>12 de Mayo</span>
+                                <br>
+                            <span class="alt-font text-large text-uppercase letter-spacing-3px text-orange opacity-9 d-block">P R Ó X I M A M E N T E</span>
+                        </div>
+                    </div>
+                    <div class="down-section text-center"><a href="#about" class="section-link up-down-ani"><i class="ti-mouse icon-small bounce text-iris-blue"></i></a></div>
+                </div>
+            </div>
+        </section>
+        <!-- end hero section -->
+        
+
+        <!-- start timer -->
+        <section class="big-section bg-extra-dark-gray" style="padding: 25px 0;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center margin-six-bottom">
+                        <h4 class="alt-font text-white font-weight-200">Tiempo para inicio del evento:</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div data-enddate="2023/04/18 12:00:00" class="countdown countdown-style-01 text-center alt-font margin-5px-bottom"><div class="countdown-container"><div class="countdown-box first"><div class="number">20</div><span>Días</span></div><div class="countdown-box"><div class="number">22</div><span>Horas</span></div><div class="countdown-box"><div class="number">55</div><span>Minutos</span></div><div class="countdown-box last"><div class="number">14</div><span>Seconds</span></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end timer -->
+        
+        
+
+
+
+        <section class="pt-0 padding-ten-lr padding-ten-bottom xl-padding-three-lr md-padding-2-half-rem-lr sm-no-padding-lr wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="bg-gradient-light-orange-light-pink border-radius-5px overflow-hidden padding-9-rem-top md-padding-6-rem-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-12 col-xl-5 col-lg-6 offset-xl-1 col-md-8 order-lg-2 padding-100px-bottom md-padding-6-rem-bottom text-center text-lg-start wow animate__fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                            <span class="alt-font font-weight-500 text-large text-extra-dark-gray text-decoration-line-bottom d-inline-block margin-35px-bottom letter-spacing-minus-1-half">iLabTDI te invita a participar en el</span>
+                            <h4 class="alt-font font-weight-500 text-extra-dark-gray letter-spacing-minus-1px margin-45px-bottom"><span class="font-weight-600">Amateur Music Talent Show</span>  y muestra tu talento para la música  </h4>
+                            
+                            
+                            
+                                <i class="feather icon-feather-map-pin icon-extra-medium text-gradient-fast-blue-purple margin-20px-bottom d-inline-block" style="float: left;"> Auditorio</i> 
+                                <i class="feather icon-feather-calendar icon-extra-medium text-gradient-fast-blue-purple margin-20px-bottom d-inline-block" style="float: right;"> 5 de mayo</i> 
+                                
+                                <br>
+                                <a href="doc/convoca23/premio.pdf" class="btn btn-link thin btn-extra-large text-medium-purple d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr">consulta las bases</a>
+                            
+                                <br>
+                                <br>
+                                
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDPpOcZEgvZdulYl2uFWKMxd9ZZRTCF18yiOYaboHnqva_-A/viewform" class="btn btn-large btn-dark-gray d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr" style="float:right; margin-right: 10%;">Ir a formulario<i class="fas fa-arrow-right right-icon"></i></a>
+
+                            <br><br><br>
+                            
+
+
+                        </div>
+
+                        <div class="col-12 col-lg-6 order-lg-1 text-center align-self-end wow animate__fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                            <img src="images/cgai/musico.png" alt="" data-no-retina="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <!-- start section -->
+        <section class="bg-light-gray" style= "padding: 25px 0;">
+
+            
+            <div class="container" >
+
+                <div class="row justify-content-center" style="margin-bottom: -45px;">
+                    <div class="col-12 col-md-7 text-center margin-5-rem-bottom sm-margin-3-rem-bottom wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        
+                        <h4 class="text-extra-dark-gray alt-font font-weight-600">TORNEOS DE VIDEOJUEGOS </h4>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 justify-content-center">
+                    <!-- start services item -->
+                    <div class="col margin-6-rem-bottom md-margin-4-rem-bottom wow animate__fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                        <div class="feature-box feature-box-left-icon-middle">
+                            <div class="feature-box-icon margin-30px-right lg-margin-25px-right">
+                                <img class="rounded-circle box-shadow-large w-110px h-110px border-all border-width-6px border-color-white lg-w-90px lg-h-90px sm-w-80px sm-h-80px" src="images/torneo/Ajedrez.png" alt="" data-no-retina="">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="alt-font text-dark-charcoal d-inline-block font-weight-500 text-uppercase margin-5px-bottom" style="-webkit-text-stroke-width: medium;">TORNEO AJEDREZ</span>
+                                <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block" style="font-size: 20px;"> 21 de Abril</i>
+                                <i class="feather icon-feather-map-pin icon-very-small text-neon-orange margin-15px-bottom sm-margin-px-bottom d-block" style="font-size: 16px;"> Módulo Z1 y Z2</i> 
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+
+                    <!-- start services item -->
+                    <div class="col margin-6-rem-bottom md-margin-4-rem-bottom wow animate__fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                        <div class="feature-box feature-box-left-icon-middle">
+                            <div class="feature-box-icon margin-30px-right lg-margin-25px-right">
+                                <img class="rounded-circle box-shadow-large w-110px h-110px border-all border-width-6px border-color-white lg-w-90px lg-h-90px sm-w-80px sm-h-80px" src="images/torneo/FIFA.png" alt="" data-no-retina="">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="alt-font text-dark-charcoal d-inline-block font-weight-500 text-uppercase margin-5px-bottom" style="-webkit-text-stroke-width: medium;">TORNEO FIFA 19</span>
+                                <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block" style="font-size: 20px;"> 21 de Abril</i>
+                                <i class="feather icon-feather-map-pin icon-very-small text-neon-orange margin-15px-bottom sm-margin-px-bottom d-block" style="font-size: 16px;"> Módulo Z1 y Z2</i>    
+                                                       
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+
+
+                    <!-- start services item -->
+                    <div class="col md-margin-4-rem-bottom wow animate__fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                        <div class="feature-box feature-box-left-icon-middle">
+                            <div class="feature-box-icon margin-30px-right lg-margin-25px-right">
+                                <img class="rounded-circle box-shadow-large w-110px h-110px border-all border-width-6px border-color-white lg-w-90px lg-h-90px sm-w-80px sm-h-80px" src="images/torneo/mariokart.png" alt="" data-no-retina="">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="alt-font text-dark-charcoal d-inline-block font-weight-500 text-uppercase margin-5px-bottom" style="-webkit-text-stroke-width: medium;">TORNEO MARIO KART 8</span>
+                                <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block" style="font-size: 20px;"> 21 de Abril</i>
+                                <i class="feather icon-feather-map-pin icon-very-small text-neon-orange margin-15px-bottom sm-margin-px-bottom d-block" style="font-size: 16px;"> Módulo Z1 y Z2</i>     
+                                                 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+                    
+
+                    <!-- start services item -->
+                    <div class="col wow animate__fadeIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                        <div class="feature-box feature-box-left-icon-middle">
+                            <div class="feature-box-icon margin-30px-right lg-margin-25px-right">
+                                <img class="rounded-circle box-shadow-large w-110px h-110px border-all border-width-6px border-color-white lg-w-90px lg-h-90px sm-w-80px sm-h-80px" src="images/torneo/smash.png" alt="" data-no-retina="">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="alt-font text-dark-charcoal d-inline-block font-weight-500 text-uppercase margin-5px-bottom" style="-webkit-text-stroke-width: medium;">TORNEO SSB ULTIMATE</span>
+                                <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block" style="font-size: 20px;"> 21 de Abril</i>
+                                <i class="feather icon-feather-map-pin icon-very-small text-neon-orange margin-15px-bottom sm-margin-px-bottom d-block" style="font-size: 16px;"> Módulo Z1 y Z2</i> 
+                                                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+
+                    <!-- start services item -->
+                    <div class="col margin-6-rem-bottom md-margin-4-rem-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <div class="feature-box feature-box-left-icon-middle">
+                            <div class="feature-box-icon margin-30px-right lg-margin-25px-right">
+                                <img class="rounded-circle box-shadow-large w-110px h-110px border-all border-width-6px border-color-white lg-w-90px lg-h-90px sm-w-80px sm-h-80px" src="images/torneo/COD.png" alt="" data-no-retina="">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="alt-font text-dark-charcoal d-inline-block font-weight-500 text-uppercase margin-5px-bottom" style="-webkit-text-stroke-width: medium;">TORNEO COD MOBILE</span>
+                                <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block" style="font-size: 20px;"> 28 de Abril</i>
+                                <i class="feather icon-feather-map-pin icon-very-small text-neon-orange margin-15px-bottom sm-margin-px-bottom d-block" style="font-size: 16px;"> Módulo Z1 y Z2</i> 
+                                                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+
+                    <!-- start services item -->
+                    <div class="col wow animate__fadeIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                        <div class="feature-box feature-box-left-icon-middle">
+                            <div class="feature-box-icon margin-30px-right lg-margin-25px-right">
+                                <img class="rounded-circle box-shadow-large w-110px h-110px border-all border-width-6px border-color-white lg-w-90px lg-h-90px sm-w-80px sm-h-80px" src="images/torneo/rubik.png" alt="" data-no-retina="">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="alt-font text-dark-charcoal d-inline-block font-weight-500 text-uppercase margin-5px-bottom" style="-webkit-text-stroke-width: medium;">TORNEO CUBO RUBIK</span>
+                                <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block" style="font-size: 20px;"> 28 de Abril</i>
+                                <i class="feather icon-feather-map-pin icon-very-small text-neon-orange margin-15px-bottom sm-margin-px-bottom d-block" style="font-size: 16px;"> Módulo Z1 y Z2</i> 
+                                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+
+                    <!-- start services item -->
+                    <div class="col xs-margin-4-rem-bottom wow animate__fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                        <div class="feature-box feature-box-left-icon-middle">
+                            <div class="feature-box-icon margin-30px-right lg-margin-25px-right">
+                                <img class="rounded-circle box-shadow-large w-110px h-110px border-all border-width-6px border-color-white lg-w-90px lg-h-90px sm-w-80px sm-h-80px" src="images/torneo/piedrapapeltijera.png" alt="" data-no-retina="">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="alt-font text-dark-charcoal d-inline-block font-weight-500 text-uppercase margin-5px-bottom" style="-webkit-text-stroke-width: medium;">TORNEO PIEDRA PAPEL O TIJERA</span>
+                                <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block" style="font-size: 20px;"> 12 de Mayo</i>
+                                <i class="feather icon-feather-map-pin icon-very-small text-neon-orange margin-15px-bottom sm-margin-px-bottom d-block" style="font-size: 16px;"> Módulo Z1 y Z2</i> 
+                                                          
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+
+                    
+                    
+                </div>
+                
+                <br>
+                <div class="col margin-6-rem-bottom md-margin-4-rem-bottom wow animate__fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDPpOcZEgvZdulYl2uFWKMxd9ZZRTCF18yiOYaboHnqva_-A/viewform" class="btn btn-large btn-gradient-magenta-orange d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr" style="float:right; margin-right: 10%;">Formulario de registro<i class="fas fa-arrow-right right-icon"></i></a>
+                </div>
+                
+                
+                
+            </div>
+        </section>
+        <!-- end section -->
+        
+
+        <!-- start section -->
+        <section class="big-section bg-extra-dark-gray" style="padding: 10px 0;">
+            <div class="container">
+                <script src="js/calendarorganizer.min.js"></script>
+                <div id="calendarContainer"></div>
+
+                
+                <div id="calendarContainer">
+                    <div id="calendarContainer">
+                        <style>.cjslib-day-indicator { color: #C2185B; background-color: #C2185B; } .cjslib-indicator-type-numeric { color: #FFFFFF; } .cjslib-day.cjslib-day-today > .cjslib-day-num { border-color: #C2185B !important; }</style>
+                        <div class="cjslib-calendar cjslib-size-medium" >
+                           
+                            <div class="cjslib-month" style="background-color: rgb(233, 30, 99); color: rgb(255, 255, 255); width:calc(100%); font-size: 20px; padding: 1px 5px;">
+                                <span id="calendarContainer-month">Abril</span>
+                            </div>
+                            <div class="cjslib-labels" style="background-color: rgb(194, 24, 91); color: rgb(248, 187, 208); line-height:10px">
+                                <span id="calendarContainer-label-1">Lun</span>
+                                <span id="calendarContainer-label-2">Mar</span>
+                                <span id="calendarContainer-label-3">Mie</span>
+                                <span id="calendarContainer-label-4">Jue</span>
+                                <span id="calendarContainer-label-5">Vie</span>
+                                <span id="calendarContainer-label-6">Sab</span>
+                                <span id="calendarContainer-label-7">Dom</span>
+                            </div>
+
+
+                           <div class="cjslib-days">
+                            <div class="cjslib-row">
+
+
+                                <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-17">  
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-17" id="calendarContainer-day-17" style="cursor: auto;">
+                                    <!-- <span class="cjslib-day-num" id="calendarContainer-day-num-1">17</span>-->
+                                    
+                                </label>
+                                
+                                <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-18">
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-18" id="calendarContainer-day-18" style="cursor: auto;">
+                                    <!--<span class="cjslib-day-num" id="calendarContainer-day-num-23">18</span>-->
+
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-19">
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-19"
+                                    id="calendarContainer-day-19" style="cursor: auto;">    
+                                    
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-20">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-20"
+                                    id="calendarContainer-day-20" style="cursor: auto;">
+
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-21">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-21"
+                                    id="calendarContainer-day-21" style="cursor: auto;">
+
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-22">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-22"
+                                    id="calendarContainer-day-22" style="background-color: #eceaea; cursor: auto;">
+                                    
+                                    <ul id="calendario_lista">
+                                        <li id="fecha_calendario_no_disponible">
+                                            22
+                                        </li>
+                                    </ul>
+                                    
+                                </label>
+                                
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-23"
+                                    id="calendarContainer-day-23" style="background-color: #eceaea; cursor: auto;">
+
+                                    <ul id="calendario_lista">
+                                        <li id="fecha_calendario_no_disponible">
+                                            23
+                                        </li>
+                                    </ul>
+                                    
+                                </label>
+                                
+                            </div>
+                                
+                                <div class="cjslib-row">    
+                                <label class="calendarContainer cjslib-day cjslib-day-listed"
+                                    for="calendarContainer-day-radio-24" id="calendarContainer-day-24" style="cursor: auto;">
+                                    
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-25">
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-25"
+                                    id="calendarContainer-day-25" style="cursor: auto;">
+                                   
+                                </label>
+
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-26">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-26"
+                                    id="calendarContainer-day-26" style="cursor: auto;">
+                                </label>
+
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-27">
+                                <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-27"
+                                    id="calendarContainer-day-27" style="cursor: auto;">
+                                                                   
+                                </label>
+                                
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-28">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-28"
+                                    id="calendarContainer-day-28" style="cursor: auto;">
+                                    
+                                </label>
+                                
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-29">
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-29"
+                                    id="calendarContainer-day-29" style="background-color: #eceaea; cursor: auto;">
+                                    <ul id="calendario_lista">
+                                        <li id="fecha_calendario_no_disponible">
+                                            29
+                                        </li>
+                                    </ul>
+                                </label>
+                                
+                                
+                                <input class="cjslib-day-radios" type="radio"
+                                    name="calendarContainer-day-radios" id="calendarContainer-day-radio-30" >
+                                <label
+                                    class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-30"
+                                    id="calendarContainer-day-30" style="background-color: #eceaea; cursor: auto;">
+                                    <ul id="calendario_lista">
+                                        <li id="fecha_calendario_no_disponible">
+                                            30
+                                        </li>
+                                    </ul>
+                                </label>
+                                
+                                </div>
+                            </div>
+
+
+                            <div class="cjslib-month" style="background-color: rgb(233, 30, 99); color: rgb(255, 255, 255); width:calc(100%); font-size: 20px; padding: 1px 5px; ">
+                                <span id="calendarContainer-month">Mayo</span>
+                             </div>
+                             <div class="cjslib-labels" style="background-color: rgb(194, 24, 91); color: rgb(248, 187, 208); line-height:10px">
+                                <span id="calendarContainer-label-1">Lun</span>
+                                <span id="calendarContainer-label-2">Mar</span>
+                                <span id="calendarContainer-label-3">Mie</span>
+                                <span id="calendarContainer-label-4">Jue</span>
+                                <span id="calendarContainer-label-5">Vie</span>
+                                <span id="calendarContainer-label-6">Sab</span>
+                                <span id="calendarContainer-label-7">Dom</span>
+                            </div>
+
+
+                            <div class="cjslib-days">
+                                <div class="cjslib-row">
+                                    
+                                    <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios"
+                                        id="calendarContainer-day-radio-1">
+                                        <label class="calendarContainer cjslib-day cjslib-day-listed"
+                                        for="calendarContainer-day-radio-1" id="calendarContainer-day-1" style="cursor: auto;">
+                                        
+                                    </label>
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-2">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-2"
+                                        id="calendarContainer-day-2" style="cursor: auto;">
+                                        
+                                    </label>
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-3">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-3"
+                                        id="calendarContainer-day-3" style="cursor: auto;">
+                                              
+                                    </label>
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-4">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-4"
+                                        id="calendarContainer-day-4" style="cursor: auto;">
+                                         
+                                    </label>
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-5">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-5"
+                                        id="calendarContainer-day-5" style="cursor: auto;">
+                                        
+                                    </label>
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-6">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-6"
+                                        id="calendarContainer-day-6" style="background-color: #eceaea; cursor: auto;">
+                                        <ul id="calendario_lista">
+                                            <li id="fecha_calendario_no_disponible">
+                                                6
+                                            </li>
+                                        </ul>
+                                    </label>
+
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-7">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-7"
+                                        id="calendarContainer-day-7" style="background-color: #eceaea; cursor: auto;">
+                                        <ul id="calendario_lista">
+                                            <li id="fecha_calendario_no_disponible">
+                                                7
+                                            </li>
+                                        </ul>
+                                        
+                                    </label>
+                                </div>
+
+                                <div class="cjslib-row">
+                                    <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios"
+                                        id="calendarContainer-day-radio-8">
+                                        <label class="calendarContainer cjslib-day cjslib-day-listed"
+                                        for="calendarContainer-day-radio-8" id="calendarContainer-day-8" style="cursor: auto;">
+                                        
+                                    </label>
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-9">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-9"
+                                        id="calendarContainer-day-9" style="cursor: auto;">
+                                        
+                                    </label>
+                                    
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-10">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-10"
+                                        id="calendarContainer-day-10" style="cursor: auto;">
+                                        
+                                    </label>
+                                    
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-11">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-11"
+                                        id="calendarContainer-day-11" style="cursor: auto;">
+                                        
+                                    </label>
+                                        
+                                    
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-12">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-12"
+                                        id="calendarContainer-day-12" style="cursor: auto;">
+                                        
+                                    </label>
+
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-13"><label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-13"
+                                        id="calendarContainer-day-13" style="background-color: #eceaea; cursor: auto;">
+                                        
+                                        <ul id="calendario_lista">
+                                            <li id="fecha_calendario_no_disponible">
+                                                13
+                                            </li>
+                                        </ul>
+                                    </label>
+
+
+                                    <input class="cjslib-day-radios" type="radio"
+                                        name="calendarContainer-day-radios" id="calendarContainer-day-radio-14">
+                                        <label
+                                        class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-14"
+                                        id="calendarContainer-day-14" style="background-color: #eceaea; cursor: auto;">
+                                        <ul id="calendario_lista">
+                                            <li id="fecha_calendario_no_disponible">
+                                                14
+                                            </li>
+                                        </ul>
+                                        
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- crea las cosas de los calendarios --> 
+                    <script>
+
+                        function crear_dia_HTML( dia_num){
+
+                            Array_Dia = DiasDatos[dia_num] ;
+
+                            //Carga Datos del Array
+                            var id_actual = Array_Dia.IDTAg ;
+
+                            var txt_dia = Array_Dia.Dia_num;
+
+
+                            // elementos
+                            var a = document.getElementById("calendarContainer-day-"+ txt_dia);
+
+
+                            var Creacion_HTML = ""
+
+                            Creacion_HTML += `
+                            <ul id="calendario_lista">
+                                <li id="fecha_calendario_disponible">
+                                ` + txt_dia +  `
+                                </li>
+                            `
+
+                            //hace for de todos los programas
+                            var programas_num = Object.keys(Array_Dia.Eventos).length; 
+                            if (programas_num !== 0) {
+                                for (var i = 1; i < programas_num+1; i = i + 1) {       
+                                    programa_i = Array_Dia.Eventos[i];
+                                    //console.log(programa_i)
+
+                                    Creacion_HTML += `<button class="astext" onclick = "fun('`+ programa_i.Tema +`', '`+ programa_i.Desde +`', '`+ programa_i.Hasta +`', '`+ programa_i.Ponente +`', '`+ programa_i.Lugar +`', '`+ Array_Dia.Fecha  +`')">`
+                                    Creacion_HTML += `<li id="calendario_ul_lista_hora">` + programa_i.Desde + `</li>` ;
+                                    //Creacion_HTML += `<button class="astext" onclick = "fun()">` + programa_i.Tema + `</button> `
+                                    Creacion_HTML += `<li id="calendario_ul_lista_fecha">` + programa_i.Tema + `</li>` ;
+                                    Creacion_HTML += `</button><br>`
+                                }
+                            } else {
+                                a.style.cssText +='background-color: #eceaea; cursor: auto;';
+                            }
+
+                            Creacion_HTML += "</ul>" //cierra
+                            a.innerHTML = Creacion_HTML;
+
+                            }// función crear dia HTML
+                            
+                            //carga la información de cada día
+                            for (var i = 1; i <= 20; i = i + 1) {
+                                crear_dia_HTML(i)
+                            }
+                        </script>
+
+                    <script>  
+                        function fun(Tema, Desde, Hasta, Ponente, Lugar, Fecha) {  
+                        alert("Evento: "+ Tema + "\n" + 
+                        "FECHA: "+ Fecha + " - "+ "De " + Desde + " a " + Hasta + "h"+ "\n"+
+                        "Ponente: "+ Ponente + "\n"+
+                        "Lugar: "+ Lugar  );  
+                        }  
+                    </script>  
+
+                <!-- CONFIGURA EL TAMAÑO DEL CALENDARIO --> 
+                <script>
+                    const style = document.createElement('style');
+                    style.textContent = `
+                    .cjslib-calendar.cjslib-size-medium {
+                        width: 100%; 
+                        height: 650px;
+                    }
+                    `;
+                    //750px 
+                    document.head.appendChild(style);
+                </script>
+
+                
+     
+
+
+                <!-- COMENTARIO <div id="organizerContainer"></div> --> 
+                <!--
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center margin-six-bottom">
+                        <h6 class="alt-font text-white font-weight-500">Edición 2022</h6>
+						<p>La 1ª Edición de INNOVA FORUM (antes Conectáctica) tuvo las siguientes participaciones</p>
+                    </div>
+                </div>
+                --> 
+                
+                
+                
+            </div>
+        </section>
+        <!-- end section -->
+		
+        <section class="big-section bg-extra-dark-gray big-section wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn; padding: 40px 0; margin-bottom: -10px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- start feature box item-->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 md-margin-30px-bottom xs-margin-15px-bottom">
+                        <div class="feature-box h-100 feature-box-left-icon-middle padding-3-rem-all bg-white box-shadow-small box-shadow-large-hover border-radius-4px overflow-hidden last-paragraph-no-margin lg-padding-2-half-rem-tb lg-padding-2-rem-lr md-padding-4-rem-all">
+                            <div class="feature-box-icon margin-30px-right lg-margin-25px-right">
+                                <i class="feather icon-feather-map-pin icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block"></i>
+                            </div>
+                            <div class="feature-box-content">
+                                <div class="text-slate-blue font-weight-500 text-large margin-5px-bottom">LUGAR</div>
+                                <span>Centro Universitario de Ciencias Exactas e Ingenierías (CUCEI)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end feature box item-->
+                    <!-- start feature box item-->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 md-margin-30px-bottom xs-margin-15px-bottom">
+                        <div class="feature-box h-100 feature-box-left-icon-middle padding-3-rem-all bg-white box-shadow-small box-shadow-large-hover border-radius-4px overflow-hidden last-paragraph-no-margin lg-padding-2-half-rem-tb lg-padding-2-rem-lr md-padding-4-rem-all">
+                            <div class="feature-box-icon margin-30px-right lg-margin-25px-right">
+                                <i class="feather icon-feather-calendar icon-small text-radical-red margin-25px-bottom sm-margin-10px-bottom d-block"></i>
+                            </div>
+                            <div class="feature-box-content">
+                                <div class="text-slate-blue font-weight-500 text-large margin-5px-bottom">FECHA</div>
+                                <span>17 de Abril al 12 de</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end feature box item-->
+                    <!-- start feature box item-->
+                    
+                    <!-- end feature box item-->
+                </div>
+            </div>
+        
+        </section>
+        
+        
+        
+        
+         <!-- start section -->
+        <section class="half-section bg-gradient-innova wow animate__fadeIn" 
+        style="background-image: linear-gradient(to right, #9ebdc6, #467dcc);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <div class="swiper-container text-center" data-slider-options='{ "slidesPerView": 1, "loop": true, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 3 } } }'>
+                            <div class="swiper-wrapper">
+                                <!-- DIAMANTE -->
+                                <!-- start slider item --><div class="swiper-slide"><a href="http://www.cga.udg.mx/" target="_blank"><img alt="iLabTDI" src="images/cgai/sponsor/iLabTDI.png"></a></div>
+                                <!-- end slider item -->
+                                <!-- start slider item --><div class="swiper-slide"><a href="http://conectactica.udg.mx/" target="_blank"><img alt="Inventores" src="images/cgai/sponsor/inventores.png"></a></div>
+                                <!-- end slider item -->
+                                <!-- start slider item --><div class="swiper-slide"><a href="https://es.coursera.org/" target="_blank"><img alt="CIE" src="images/cgai/sponsor/CIE.PNG"></a></div>
+                                <!-- end slider item -->
+                                <!-- start slider item --><div class="swiper-slide"><a href="https://proulex.com" target="_blank"><img alt="RADIO CUCEI" src="images/cgai/sponsor/Radiocucei.png"></a></div>
+                                <!-- end slider item -->
+                                <!-- start slider item --><div class="swiper-slide"><a href="https://fundacion.udg.mx/" target="_blank"><img alt="Red universitaria de guadalajara." src="images/cgai/sponsor/udglogo.png"></a></div>
+                                <!-- end slider item -->
+                                <!-- start slider item --><div class="swiper-slide"><a href="https://fundacion.udg.mx/" target="_blank"><img alt="CUCEI" src="images/cgai/sponsor/cucei.png"></a></div>
+                                <!-- end slider item -->
+                                
+                            </div>
+                        </div>
+                        <!-- start slider navigation -->
+                        <div class="swiper-button-next-nav swiper-button-next rounded-circle light slider-navigation-style-07 box-shadow-double-large"><i class="feather icon-feather-arrow-right"></i></div>
+                        <div class="swiper-button-previous-nav swiper-button-prev rounded-circle light slider-navigation-style-07 box-shadow-double-large"><i class="feather icon-feather-arrow-left"></i></div>
+                        <!-- end slider navigation -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- end section --><!-- start section -->
+        <section class="overflow-visible position-relative py-0 wow animate__zoomIn">
+            <a href="#"><img class="absolute-middle-center md-w-150px sm-w-100px" src="images/cgai/escudo.png" alt=""></a>
+        </section>
+        <!-- end section -->
+        <!-- start footer -->
+        
+        <footer class="footer-restaurant footer-light padding-60px-tb border-top border-color-black-transparent md-padding-80px-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 sm-margin-15px-bottom">
+                        <ul class="alt-font footer-horizontal-link d-flex flex-column flex-sm-row justify-content-center justify-content-md-start text-center text-uppercase text-small">
+                          <!-- end section  <li><a href="home2022.php.html" class="text-iris-blue-hover">Edición 2022</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end last-paragraph-no-margin">
+                        <p class="alt-font text-small text-uppercase">&copy; 2023 Jornada de la innovación es desarrollada por <a href="https://www.facebook.com/ILabTDI/" target="_blank" class="text-decoration-line-bottom text-extra-dark-gray text-uppercase font-weight-600">ILabTDI</a> de la <a href="http://udg.mx/" target="_blank" class="text-decoration-line-bottom text-extra-dark-gray text-uppercase font-weight-600">Universidad de Guadalajara</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>        <!-- end footer -->
+        <!-- start scroll to top -->
+        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+        <!-- end scroll to top -->
+        <!-- javascript -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/theme-vendors.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+        
+    </body>
+</html>
+
+
+
+
+
+
